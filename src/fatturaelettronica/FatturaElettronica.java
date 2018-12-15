@@ -168,7 +168,11 @@ public class FatturaElettronica {
                 while (sCurrentLine != null) {
                     line++;
                     bwe.write(sdf.format(date) + " >   " + "init-tratt @line: " + line + "\n");
-                    retCod = getXml(sCurrentLine);
+                    try {
+                        retCod = getXml(sCurrentLine);
+                    } catch (Exception e) {
+                        JOptionPane.showMessageDialog(jp, "Errore riga " + line + "\nValore riga: " + sCurrentLine + "\nEccezione sollevata: " + e.toString() + "\n", "Formato dato errato", JOptionPane.WARNING_MESSAGE);
+                    }
                     switch (retCod) {
                         case 1:
                             break;
@@ -369,9 +373,9 @@ public class FatturaElettronica {
 
                     sPrg = index[1];
                     while (Arrays.asList(prgList).contains(sPrg)) {
-                        sPrg= RandomStringUtils.random(5, true, true);
+                        sPrg = RandomStringUtils.random(5, true, true);
                     }
-                    
+
                     prgList[nprg] = sPrg;
                     datiTrasm.setProgressivoInvio(sPrg);
                     break;
