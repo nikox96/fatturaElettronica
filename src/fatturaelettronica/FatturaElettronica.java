@@ -132,21 +132,6 @@ public class FatturaElettronica {
         jf.getContentPane().add(jp, BorderLayout.CENTER);
         jf.setVisible(true);
 
-        appdata = System.getenv("AppData");
-        if ("".equals(appdata) || appdata == null) {
-            System.out.println("env var not defined!");
-            return;
-        }
-        fTemp = new File(appdata + "\\ae_fatturaElettronica");
-        if (!(fTemp.exists())) {
-            fTemp.mkdirs();
-        }
-        fTemp = new File(appdata + "\\ae_fatturaElettronica\\fattura_elettronica_err.log");
-        if (!(fTemp.exists())) {
-            fTemp.createNewFile();
-        }
-        fwe = new FileWriter(fTemp);
-        bwe = new BufferedWriter(fwe);
         jfc.setFileSelectionMode(JFileChooser.FILES_ONLY);
         jfc.setDialogTitle("Scegli file da convertire in XML");
         jfc.setDialogType(JFileChooser.OPEN_DIALOG);
@@ -160,7 +145,23 @@ public class FatturaElettronica {
             if (jfc.showOpenDialog(jf) == JFileChooser.CANCEL_OPTION) {
                 System.exit(1);
             }
+            //appdata = System.getenv("AppData");
             while (fileIndex < jfc.getSelectedFiles().length) {
+                appdata = jfc.getSelectedFiles()[fileIndex].getParent();
+                if ("".equals(appdata) || appdata == null) {
+                    System.out.println("env var not defined!");
+                    return;
+                }
+                fTemp = new File(appdata + "\\ae_fatturaElettronica");
+                if (!(fTemp.exists())) {
+                    fTemp.mkdirs();
+                }
+                fTemp = new File(appdata + "\\ae_fatturaElettronica\\fattura_elettronica_err.log");
+                if (!(fTemp.exists())) {
+                    fTemp.createNewFile();
+                }
+                fwe = new FileWriter(fTemp);
+                bwe = new BufferedWriter(fwe);
                 initializeVar();
                 fr = new FileReader(jfc.getSelectedFiles()[fileIndex]);
                 br = new BufferedReader(new InputStreamReader(new FileInputStream(jfc.getSelectedFiles()[fileIndex]), "Cp1252"));
@@ -1149,7 +1150,7 @@ public class FatturaElettronica {
         nprg += 1;
         root.setFatturaElettronicaHeader(fattHeader);
         //se servirà aprire un dialogo per scegliere la versione
-        root.setVersione(FormatoTrasmissioneType.FPR_12);
+        root.setVersione(FormatoTrasmissioneType.valueOf(rootVersione));
         fw = new FileWriter(appdata + "\\ae_fatturaElettronica\\IT" + cf.trim() + "_" + sPrg + ".xml");
         marshaller.marshal(root, fw);
         root = xml.createFatturaElettronicaType();
