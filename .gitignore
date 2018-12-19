@@ -1,2 +1,9 @@
+**/*.exe
+**/*.jar
+**/*.class
 dist
+dist\bundles
 build
+build\classes\fatturaelettronica
+build\classes\fatturaelettronica\semplificata\fatturaelettronica
+build\classes\fatturaelettronica\ordinaria\fatturaelettronica
