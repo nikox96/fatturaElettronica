@@ -1073,7 +1073,7 @@ public class FatturaElettronica {
                     fattBodyDettPag.setIstitutoFinanziario(index[1]);
                     break;
                 case "2.4.2.13":
-                    fattBodyDettPag.setIBAN(index[1]);
+                    fattBodyDettPag.setIBAN(index[1].replaceAll(" ", ""));
                     break;
                 case "2.4.2.14":
                     fattBodyDettPag.setABI(index[1]);
@@ -1150,7 +1150,7 @@ public class FatturaElettronica {
         nprg += 1;
         root.setFatturaElettronicaHeader(fattHeader);
         //se servirà aprire un dialogo per scegliere la versione
-        root.setVersione(FormatoTrasmissioneType.valueOf(rootVersione));
+        root.setVersione(FormatoTrasmissioneType.fromValue(rootVersione));
         fw = new FileWriter(appdata + "\\ae_fatturaElettronica\\IT" + cf.trim() + "_" + sPrg + ".xml");
         marshaller.marshal(root, fw);
         root = xml.createFatturaElettronicaType();
