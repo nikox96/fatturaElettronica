@@ -1,4 +1,2 @@
-**/*.exe
-**/*.jar
-dist
-build
+*.jar
+*.exe
