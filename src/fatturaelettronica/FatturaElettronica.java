@@ -24,6 +24,7 @@ import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.regex.Pattern;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -406,12 +407,15 @@ public class FatturaElettronica {
                     cedAna.setCodiceFiscale(index[1]);
                     break;
                 case "1.2.1.3.1":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     cedAnaAna.setDenominazione(index[1]);
                     break;
                 case "1.2.1.3.2":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     cedAnaAna.setNome(index[1]);
                     break;
                 case "1.2.1.3.3":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     cedAnaAna.setCognome(index[1]);
                     break;
                 case "1.2.1.3.4":
@@ -421,6 +425,7 @@ public class FatturaElettronica {
                     cedAnaAna.setCodEORI(index[1]);
                     break;
                 case "1.2.1.4":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     cedAna.setAlboProfessionale(index[1]);
                     break;
                 case "1.2.1.5":
@@ -436,6 +441,7 @@ public class FatturaElettronica {
                     cedAna.setRegimeFiscale(RegimeFiscaleType.fromValue(index[1]));
                     break;
                 case "1.2.2.1":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     cedSede.setIndirizzo(index[1]);
                     break;
                 case "1.2.2.2":
@@ -445,6 +451,7 @@ public class FatturaElettronica {
                     cedSede.setCAP(index[1]);
                     break;
                 case "1.2.2.4":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     cedSede.setComune(index[1]);
                     break;
                 case "1.2.2.5":
@@ -454,6 +461,7 @@ public class FatturaElettronica {
                     cedSede.setNazione(index[1]);
                     break;
                 case "1.2.3.1":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     cedStab.setIndirizzo(index[1]);
                     break;
                 case "1.2.3.2":
@@ -463,6 +471,7 @@ public class FatturaElettronica {
                     cedStab.setCAP(index[1]);
                     break;
                 case "1.2.3.4":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     cedStab.setComune(index[1]);
                     break;
                 case "1.2.3.5":
@@ -509,12 +518,15 @@ public class FatturaElettronica {
                     rapprAna.setCodiceFiscale(index[1]);
                     break;
                 case "1.3.1.3.1":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     rapprAnaAna.setDenominazione(index[1]);
                     break;
                 case "1.3.1.3.2":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     rapprAnaAna.setNome(index[1]);
                     break;
                 case "1.3.1.3.3":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     rapprAnaAna.setCognome(index[1]);
                     break;
                 case "1.3.1.3.4":
@@ -533,12 +545,15 @@ public class FatturaElettronica {
                     cessAna.setCodiceFiscale(index[1]);
                     break;
                 case "1.4.1.3.1":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     cessAnaAna.setDenominazione(index[1]);
                     break;
                 case "1.4.1.3.2":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     cessAnaAna.setNome(index[1]);
                     break;
                 case "1.4.1.3.3":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     cessAnaAna.setCognome(index[1]);
                     break;
                 case "1.4.1.3.4":
@@ -548,6 +563,7 @@ public class FatturaElettronica {
                     cessAnaAna.setCodEORI(index[1]);
                     break;
                 case "1.4.2.1":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     cessSede.setIndirizzo(index[1]);
                     break;
                 case "1.4.2.2":
@@ -557,6 +573,7 @@ public class FatturaElettronica {
                     cessSede.setCAP(index[1]);
                     break;
                 case "1.4.2.4":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     cessSede.setComune(index[1]);
                     break;
                 case "1.4.2.5":
@@ -566,6 +583,7 @@ public class FatturaElettronica {
                     cessSede.setNazione(index[1]);
                     break;
                 case "1.4.3.1":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     cessStab.setIndirizzo(index[1]);
                     break;
                 case "1.4.3.2":
@@ -575,6 +593,7 @@ public class FatturaElettronica {
                     cessStab.setCAP(index[1]);
                     break;
                 case "1.4.3.4":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     cessStab.setComune(index[1]);
                     break;
                 case "1.4.3.5":
@@ -590,12 +609,15 @@ public class FatturaElettronica {
                     cessRapprFisIdFis.setIdCodice(index[1]);
                     break;
                 case "1.4.4.2":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     cessRapprFis.setDenominazione(index[1]);
                     break;
                 case "1.4.4.3":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     cessRapprFis.setNome(index[1]);
                     break;
                 case "1.4.4.4":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     cessRapprFis.setCognome(index[1]);
                     break;
                 case "1.5.1.1.1":
@@ -608,12 +630,15 @@ public class FatturaElettronica {
                     terzoAna.setCodiceFiscale(index[1]);
                     break;
                 case "1.5.1.3.1":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     terzoAnaAna.setDenominazione(index[1]);
                     break;
                 case "1.5.1.3.2":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     terzoAnaAna.setNome(index[1]);
                     break;
                 case "1.5.1.3.3":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     terzoAnaAna.setCognome(index[1]);
                     break;
                 case "1.5.1.3.4":
@@ -711,6 +736,7 @@ public class FatturaElettronica {
                     datiGenDoc.setArrotondamento(new BigDecimal(("0".equals(index[1]) ? "0.00" : index[1])));
                     break;
                 case "2.1.1.11":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     datiGenDoc.getCausale().add(index[1]);
                     break;
                 case "2.1.1.12":
@@ -729,6 +755,7 @@ public class FatturaElettronica {
                     datiDocCorrAcq.setNumItem(index[1]);
                     break;
                 case "2.1.2.5":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     datiDocCorrAcq.setCodiceCommessaConvenzione(index[1]);
                     break;
                 case "2.1.2.6":
@@ -750,6 +777,7 @@ public class FatturaElettronica {
                     datiDocCorrContratto.setNumItem(index[1]);
                     break;
                 case "2.1.3.5":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     datiDocCorrContratto.setCodiceCommessaConvenzione(index[1]);
                     break;
                 case "2.1.3.6":
@@ -771,6 +799,7 @@ public class FatturaElettronica {
                     datiDocCorrConv.setNumItem(index[1]);
                     break;
                 case "2.1.4.5":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     datiDocCorrConv.setCodiceCommessaConvenzione(index[1]);
                     break;
                 case "2.1.4.6":
@@ -792,6 +821,7 @@ public class FatturaElettronica {
                     datiDocCorrRic.setNumItem(index[1]);
                     break;
                 case "2.1.5.5":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     datiDocCorrRic.setCodiceCommessaConvenzione(index[1]);
                     break;
                 case "2.1.5.6":
@@ -813,6 +843,7 @@ public class FatturaElettronica {
                     datiDocCorrFattColl.setNumItem(index[1]);
                     break;
                 case "2.1.6.5":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     datiDocCorrFattColl.setCodiceCommessaConvenzione(index[1]);
                     break;
                 case "2.1.6.6":
@@ -845,12 +876,15 @@ public class FatturaElettronica {
                     datiTraspDatiAnaVett.setCodiceFiscale(index[1]);
                     break;
                 case "2.1.9.1.3.1":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     datiTraspAnaAna.setDenominazione(index[1]);
                     break;
                 case "2.1.9.1.3.2":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     datiTraspAnaAna.setNome(index[1]);
                     break;
                 case "2.1.9.1.3.3":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     datiTraspAnaAna.setCognome(index[1]);
                     break;
                 case "2.1.9.1.3.4":
@@ -863,15 +897,18 @@ public class FatturaElettronica {
                     datiTraspDatiAnaVett.setNumeroLicenzaGuida(index[1]);
                     break;
                 case "2.1.9.2":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     datiTrasp.setMezzoTrasporto(index[1]);
                     break;
                 case "2.1.9.3":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     datiTrasp.setCausaleTrasporto(index[1]);
                     break;
                 case "2.1.9.4":
                     datiTrasp.setNumeroColli(Integer.parseInt(index[1]));
                     break;
                 case "2.1.9.5":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     datiTrasp.setDescrizione(index[1]);
                     break;
                 case "2.1.9.6":
@@ -895,6 +932,7 @@ public class FatturaElettronica {
                     datiTrasp.setTipoResa(index[1]);
                     break;
                 case "2.1.9.12.1":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     datiTraspInd.setIndirizzo(index[1]);
                     break;
                 case "2.1.9.12.2":
@@ -904,6 +942,7 @@ public class FatturaElettronica {
                     datiTraspInd.setCAP(index[1]);
                     break;
                 case "2.1.9.12.4":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     datiTraspInd.setComune(index[1]);
                     break;
                 case "2.1.9.12.5":
@@ -937,6 +976,7 @@ public class FatturaElettronica {
                     codArt.setCodiceValore(index[1]);
                     break;
                 case "2.2.1.4":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     fattBodyDettLin.setDescrizione(index[1]);
                     break;
                 case "2.2.1.5":
@@ -988,6 +1028,7 @@ public class FatturaElettronica {
                     altriDatiGest.setTipoDato(index[1]);
                     break;
                 case "2.2.1.16.2":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     altriDatiGest.setRiferimentoTesto(index[1]);
                     break;
                 case "2.2.1.16.3":
@@ -1024,6 +1065,7 @@ public class FatturaElettronica {
                     fattBodyDatiRiep.setEsigibilitaIVA(EsigibilitaIVAType.fromValue(index[1]));
                     break;
                 case "2.2.2.8":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     fattBodyDatiRiep.setRiferimentoNormativo(index[1]);
                     break;
                 case "2.3.1":
@@ -1036,6 +1078,7 @@ public class FatturaElettronica {
                     fattBodyDatiPag.setCondizioniPagamento(CondizioniPagamentoType.fromValue(index[1]));
                     break;
                 case "2.4.2.1":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     fattBodyDettPag.setBeneficiario(index[1]);
                     break;
                 case "2.4.2.2":
@@ -1058,9 +1101,11 @@ public class FatturaElettronica {
                     fattBodyDettPag.setCodUfficioPostale(index[1]);
                     break;
                 case "2.4.2.8":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     fattBodyDettPag.setCognomeQuietanzante(index[1]);
                     break;
                 case "2.4.2.9":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     fattBodyDettPag.setNomeQuietanzante(index[1]);
                     break;
                 case "2.4.2.10":
@@ -1070,6 +1115,7 @@ public class FatturaElettronica {
                     fattBodyDettPag.setTitoloQuietanzante(index[1]);
                     break;
                 case "2.4.2.12":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     fattBodyDettPag.setIstitutoFinanziario(index[1]);
                     break;
                 case "2.4.2.13":
@@ -1102,6 +1148,7 @@ public class FatturaElettronica {
                     fattBodyDettPag.setCodicePagamento(index[1]);
                     break;
                 case "2.5.1":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     fattBodyAllegato.setNomeAttachment(index[1]);
                     break;
                 case "2.5.2":
@@ -1111,6 +1158,7 @@ public class FatturaElettronica {
                     fattBodyAllegato.setFormatoAttachment(index[1]);
                     break;
                 case "2.5.4":
+                    index[1] = index[1].replaceAll("[^\\p{IsLatin}- ]", "");
                     fattBodyAllegato.setDescrizioneAttachment(index[1]);
                     break;
                 case "2.5.5":
