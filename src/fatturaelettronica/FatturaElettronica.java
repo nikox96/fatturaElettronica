@@ -5,8 +5,9 @@
  */
 package fatturaelettronica;
 
-import fatturaelettronica.ordinaria.fatturaelettronica.*;
+import fatturaelettronica.ordinaria.*;
 import java.awt.BorderLayout;
+import java.awt.HeadlessException;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -16,6 +17,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.math.BigDecimal;
 import java.text.DateFormat;
 import java.text.DecimalFormat;
@@ -24,7 +26,6 @@ import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.GregorianCalendar;
-import java.util.regex.Pattern;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -42,7 +43,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 /**
  *
  * @author Nicolò
- *
+ * @version: 1.6.1
  * @todo:
  */
 public class FatturaElettronica {
@@ -99,7 +100,7 @@ public class FatturaElettronica {
     static DatiSALType datiSal;
 
     static Date date = new Date();
-    private static final DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+    private static final DateFormat SIMPLE_DATE_FORMAT = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
     static int lvlCur, lvlPrev = 0, line, retCod, nprg;
     static String lvlTmp, lvlarr[], rootVersione, sPrg;
     static String[] prgList;
@@ -110,19 +111,23 @@ public class FatturaElettronica {
      * @throws javax.xml.bind.JAXBException
      * @throws java.io.IOException
      */
-    public static void main(String[] args) throws JAXBException, IOException, FileNotFoundException, ParseException, DatatypeConfigurationException {
+    public static void main(String[] args) {
         xml = new ObjectFactory();
         prgList = new String[500];
         array = new byte[5];
         nprg = 0;
 
-        jaxbContext = JAXBContext.newInstance("fatturaelettronica.ordinaria.fatturaelettronica");
-        marshaller = jaxbContext.createMarshaller();
+        try {
+            jaxbContext = JAXBContext.newInstance("fatturaelettronica.ordinaria");
+            marshaller = jaxbContext.createMarshaller();
+        } catch (JAXBException e) {
+            JOptionPane.showMessageDialog(null, "Riscontrata eccezione in JAXB:\n" + e.getMessage());
+        }
         //marshaller.setSchema(schema);
 
-        BufferedReader br = null;
+        BufferedReader br;
         File fTemp;
-        FileReader fr = null;
+        FileReader fr;
         fw = null;
 
         FileWriter fwe = null;
@@ -142,13 +147,12 @@ public class FatturaElettronica {
         jfc.setVisible(true);
         int fileIndex = 0;
 
-        while (jfc.getSelectedFiles().length <= 0 || jfc.getSelectedFile() == null) {
-            if (jfc.showOpenDialog(jf) == JFileChooser.CANCEL_OPTION) {
-                System.exit(1);
-            }
-            //appdata = System.getenv("AppData");
-            while (fileIndex < jfc.getSelectedFiles().length) {
-                appdata = jfc.getSelectedFiles()[fileIndex].getParent();
+        try {
+            while (jfc.getSelectedFiles().length <= 0 || jfc.getSelectedFile() == null) {
+                if (jfc.showOpenDialog(jf) == JFileChooser.CANCEL_OPTION) {
+                    System.exit(1);
+                }
+                appdata = jfc.getCurrentDirectory().getAbsolutePath();
                 if ("".equals(appdata) || appdata == null) {
                     System.out.println("env var not defined!");
                     return;
@@ -163,59 +167,63 @@ public class FatturaElettronica {
                 }
                 fwe = new FileWriter(fTemp);
                 bwe = new BufferedWriter(fwe);
-                initializeVar();
-                fr = new FileReader(jfc.getSelectedFiles()[fileIndex]);
-                br = new BufferedReader(new InputStreamReader(new FileInputStream(jfc.getSelectedFiles()[fileIndex]), "Cp1252"));
-                String sCurrentLine = br.readLine();
-                while (sCurrentLine != null) {
-                    line++;
-                    bwe.write(sdf.format(date) + " >   " + "init-tratt @line: " + line + "\n");
-                    try {
-                        retCod = getXml(sCurrentLine);
-                    } catch (Exception e) {
-                        JOptionPane.showMessageDialog(jp, "Errore riga " + line + "\nValore riga: " + sCurrentLine + "\nEccezione sollevata: " + e.toString() + "\n", "Formato dato errato", JOptionPane.WARNING_MESSAGE);
+
+                //appdata = System.getenv("AppData");
+                while (fileIndex < jfc.getSelectedFiles().length) {
+                    bwe.write(SIMPLE_DATE_FORMAT.format(date) + " >   " + "inizio elaborazione file " + jfc.getSelectedFiles()[fileIndex].getName() + "\n");
+
+                    line = 0;
+                    initializeVar();
+                    fr = new FileReader(jfc.getSelectedFiles()[fileIndex]);
+                    br = new BufferedReader(new InputStreamReader(new FileInputStream(jfc.getSelectedFiles()[fileIndex]), "Cp1252"));
+                    String sCurrentLine = br.readLine();
+                    while (sCurrentLine != null) {
+                        line++;
+                        bwe.write(SIMPLE_DATE_FORMAT.format(date) + " >   " + "init-tratt @line: " + line + "\n");
+                        try {
+                            retCod = getXml(sCurrentLine);
+                        } catch (IOException | ParseException | JAXBException | DatatypeConfigurationException e) {
+                            JOptionPane.showMessageDialog(jp, "Errore riga " + line + "\nValore riga: " + sCurrentLine + "\nEccezione sollevata: " + e.toString() + "\n", "Formato dato errato", JOptionPane.WARNING_MESSAGE);
+                        }
+                        switch (retCod) {
+                            case 1:
+                                break;
+                            case 3:
+                                bwe.write(SIMPLE_DATE_FORMAT.format(date) + " >   " + "errore tipo: " + retCod + " - parametri in index[] non presenti o più di 2 \n");
+                                break;
+                            default:
+                                bwe.write(SIMPLE_DATE_FORMAT.format(date) + " >   " + "errore tipo: " + retCod + "\n");
+                                break;
+                        }
+                        sCurrentLine = br.readLine();
                     }
-                    switch (retCod) {
-                        case 1:
-                            break;
-                        case 3:
-                            bwe.write(sdf.format(date) + " >   " + "errore tipo: " + retCod + " - parametri in index[] non presenti o più di 2 \n");
-                            break;
-                        default:
-                            bwe.write(sdf.format(date) + " >   " + "errore tipo: " + retCod + "\n");
-                            break;
-                    }
-                    sCurrentLine = br.readLine();
-                }
-                buildFattBody();
-                writeFattura();
-                try {
-                    if (br != null) {
-                        br.close();
-                    }
-                    if (fr != null) {
-                        fr.close();
-                    }
+                    buildFattBody();
+                    writeFattura();
+                    br.close();
+                    fr.close();
                     if (fw != null) {
                         fw.close();
                     }
-                } catch (IOException ex) {
+                    fileIndex++;
                 }
-                fileIndex++;
             }
+        } catch (HeadlessException | IOException | JAXBException e) {
+            e.printStackTrace(new PrintWriter(bwe));
+            JOptionPane.showMessageDialog(jp, "Riscontrata eccezione:\n" + e.getMessage());
         }
         try {
             if (bwe != null) {
-                bwe.write(sdf.format(date) + " >   righe lette: " + line);
+                bwe.write(SIMPLE_DATE_FORMAT.format(date) + " >   righe lette: " + line);
                 bwe.close();
             }
             if (fwe != null) {
                 fwe.close();
             }
+            if (JOptionPane.showConfirmDialog(jp, "Si desidera aprire la cartella dove sono stati prodotti i file?") == JOptionPane.YES_OPTION) {
+                Runtime.getRuntime().exec("explorer.exe " + appdata + "\\ae_fatturaElettronica");
+            }
         } catch (IOException ex) {
-        }
-        if (JOptionPane.showConfirmDialog(jp, "Si desidera aprire la cartella dove sono stati prodotti i file?") == JOptionPane.YES_OPTION) {
-            Runtime.getRuntime().exec("explorer.exe " + appdata + "\\ae_fatturaElettronica");
+            JOptionPane.showMessageDialog(jp, "Riscontrata eccezione di IO:\n" + ex.getMessage());
         }
         System.exit(1);
     }
@@ -352,7 +360,7 @@ public class FatturaElettronica {
                 } else if (lvlCur > 25000000 && lvlCur < 25059999) {
                     buildAllegato();
                 } else {
-                    bwe.write(sdf.format(date) + " >   lvlCur: " + lvlCur + " lvlPrev: " + lvlPrev + "\n");
+                    bwe.write(SIMPLE_DATE_FORMAT.format(date) + " >   lvlCur: " + lvlCur + " lvlPrev: " + lvlPrev + "\n");
                     return 8;
                 }
             } else if (lvlPrev > 10000000 && lvlPrev < 20000000 && lvlCur >= 20000000) {
@@ -966,9 +974,6 @@ public class FatturaElettronica {
                 case "2.2.1.2":
                     fattBodyDettLin.setTipoCessionePrestazione(TipoCessionePrestazioneType.fromValue(index[1]));
                     break;
-                /*case "2.2.1.3":
-                    
-                    break;*/
                 case "2.2.1.3.1":
                     codArt.setCodiceTipo(index[1]);
                     break;
@@ -1222,7 +1227,7 @@ public class FatturaElettronica {
             datiGenDoc.setDatiBollo(datiBollo);
         }
         if (datiRitenuta.getTipoRitenuta() == TipoRitenutaType.RT_01 || datiRitenuta.getTipoRitenuta() == TipoRitenutaType.RT_02) {
-            datiGenDoc.setDatiRitenuta(datiRitenuta);
+            datiGenDoc.getDatiRitenuta().add(datiRitenuta);
         }
 
         if ((!("".equals(datiTraspAnaAna.getDenominazione()) || datiTraspAnaAna.getDenominazione() == null)) || (!("".equals(datiTraspAnaAna.getNome()) || datiTraspAnaAna.getNome() == null))) {
