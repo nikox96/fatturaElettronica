@@ -23,9 +23,10 @@ import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.List;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -101,9 +102,9 @@ public class FatturaElettronica {
 
     static Date date = new Date();
     private static final DateFormat SIMPLE_DATE_FORMAT = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-    static int lvlCur, lvlPrev = 0, line, retCod, nprg;
+    static int lvlCur, lvlPrev, line, retCod, nprg;
     static String lvlTmp, lvlarr[], rootVersione, sPrg;
-    static String[] prgList;
+    static List<String> prgList;
     static byte[] array;
 
     /**
@@ -113,7 +114,7 @@ public class FatturaElettronica {
      */
     public static void main(String[] args) {
         xml = new ObjectFactory();
-        prgList = new String[500];
+        prgList = new ArrayList<>();
         array = new byte[5];
         nprg = 0;
 
@@ -173,6 +174,7 @@ public class FatturaElettronica {
                     bwe.write(SIMPLE_DATE_FORMAT.format(date) + " >   " + "inizio elaborazione file " + jfc.getSelectedFiles()[fileIndex].getName() + "\n");
 
                     line = 0;
+                    lvlPrev = 0;
                     initializeVar();
                     fr = new FileReader(jfc.getSelectedFiles()[fileIndex]);
                     br = new BufferedReader(new InputStreamReader(new FileInputStream(jfc.getSelectedFiles()[fileIndex]), "Cp1252"));
@@ -382,11 +384,11 @@ public class FatturaElettronica {
                     }
 
                     sPrg = index[1];
-                    while (Arrays.asList(prgList).contains(sPrg)) {
+                    while (prgList.contains(sPrg)) {
                         sPrg = RandomStringUtils.random(5, true, true);
                     }
 
-                    prgList[nprg] = sPrg;
+                    prgList.add(sPrg);
                     datiTrasm.setProgressivoInvio(sPrg);
                     break;
                 case "1.1.3":

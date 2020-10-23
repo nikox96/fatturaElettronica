@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\Nicol\Documents\NetBeansProjects\fatturaElettronica\dist\fatturaElettronica.jar</jar>
+  <outfile>C:\Users\Nicol\Documents\NetBeansProjects\fatturaElettronica\dist\fatturaElettronica.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon></icon>
+  <classPath>
+    <mainClass>fatturaelettronica.FatturaElettronica</mainClass>
+    <cp>lib/commons-lang3-3.8.1.jar</cp>
+    <cp>lib/jaxb-2_0-final-api.jar</cp>
+  </classPath>
+  <jre>
+    <path>D:\Programmi\Java\jdk1.8.0_202\jre</path>
+    <bundledJre64Bit>false</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion>1.8.0_191</minVersion>
+    <maxVersion>1.8.0_202</maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+  </jre>
+</launch4jConfig>
