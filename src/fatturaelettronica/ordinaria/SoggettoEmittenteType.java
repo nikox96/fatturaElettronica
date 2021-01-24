@@ -36,8 +36,8 @@ public enum SoggettoEmittenteType {
     /**
      * Cessionario / Committente
      *
-     */
-    CC,
+     *
+    CC,*/
 
     /**
      * Terzo
