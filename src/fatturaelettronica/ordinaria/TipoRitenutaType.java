@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:21 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:27:08 PM CET 
 //
 
 
@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Classe Java per TipoRitenutaType.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
  * <p>
  * <pre>
@@ -31,7 +31,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
- *
+ * 
  */
 @XmlType(name = "TipoRitenutaType")
 @XmlEnum
@@ -40,42 +40,42 @@ public enum TipoRitenutaType {
 
     /**
      * Ritenuta di acconto persone fisiche
-     *
+     * 
      */
     @XmlEnumValue("RT01")
     RT_01("RT01"),
 
     /**
      * Ritenuta di acconto persone giuridiche
-     *
+     * 
      */
     @XmlEnumValue("RT02")
     RT_02("RT02"),
 
     /**
      * Contributo INPS
-     *
+     * 
      */
     @XmlEnumValue("RT03")
     RT_03("RT03"),
 
     /**
      * Contributo ENASARCO
-     *
+     * 
      */
     @XmlEnumValue("RT04")
     RT_04("RT04"),
 
     /**
      * Contributo ENPAM
-     *
+     * 
      */
     @XmlEnumValue("RT05")
     RT_05("RT05"),
 
     /**
      * Altro contributo previdenziale
-     *
+     * 
      */
     @XmlEnumValue("RT06")
     RT_06("RT06");

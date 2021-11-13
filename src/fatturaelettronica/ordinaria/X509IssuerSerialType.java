@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:21 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:27:08 PM CET 
 //
 
 
@@ -17,9 +17,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Classe Java per X509IssuerSerialType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="X509IssuerSerialType">
  *   &lt;complexContent>
@@ -32,8 +32,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "X509IssuerSerialType", namespace = "http://www.w3.org/2000/09/xmldsig#", propOrder = {
@@ -48,48 +48,48 @@ public class X509IssuerSerialType {
     protected BigInteger x509SerialNumber;
 
     /**
-     * Recupera il valore della proprieta' x509IssuerName.
-     *
+     * Recupera il valore della propriet x509IssuerName.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getX509IssuerName() {
         return x509IssuerName;
     }
 
     /**
-     * Imposta il valore della proprieta' x509IssuerName.
-     *
+     * Imposta il valore della propriet x509IssuerName.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setX509IssuerName(String value) {
         this.x509IssuerName = value;
     }
 
     /**
-     * Recupera il valore della proprieta' x509SerialNumber.
-     *
+     * Recupera il valore della propriet x509SerialNumber.
+     * 
      * @return
      *     possible object is
      *     {@link BigInteger }
-     *
+     *     
      */
     public BigInteger getX509SerialNumber() {
         return x509SerialNumber;
     }
 
     /**
-     * Imposta il valore della proprieta' x509SerialNumber.
-     *
+     * Imposta il valore della propriet x509SerialNumber.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigInteger }
-     *
+     *     
      */
     public void setX509SerialNumber(BigInteger value) {
         this.x509SerialNumber = value;

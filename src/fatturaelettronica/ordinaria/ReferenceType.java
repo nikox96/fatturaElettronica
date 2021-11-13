@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:21 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:27:08 PM CET 
 //
 
 
@@ -21,9 +21,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 /**
  * <p>Classe Java per ReferenceType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="ReferenceType">
  *   &lt;complexContent>
@@ -40,8 +40,8 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ReferenceType", namespace = "http://www.w3.org/2000/09/xmldsig#", propOrder = {
@@ -70,56 +70,56 @@ public class ReferenceType {
     protected String type;
 
     /**
-     * Recupera il valore della proprieta' transforms.
-     *
+     * Recupera il valore della propriet transforms.
+     * 
      * @return
      *     possible object is
      *     {@link TransformsType }
-     *
+     *     
      */
     public TransformsType getTransforms() {
         return transforms;
     }
 
     /**
-     * Imposta il valore della proprieta' transforms.
-     *
+     * Imposta il valore della propriet transforms.
+     * 
      * @param value
      *     allowed object is
      *     {@link TransformsType }
-     *
+     *     
      */
     public void setTransforms(TransformsType value) {
         this.transforms = value;
     }
 
     /**
-     * Recupera il valore della proprieta' digestMethod.
-     *
+     * Recupera il valore della propriet digestMethod.
+     * 
      * @return
      *     possible object is
      *     {@link DigestMethodType }
-     *
+     *     
      */
     public DigestMethodType getDigestMethod() {
         return digestMethod;
     }
 
     /**
-     * Imposta il valore della proprieta' digestMethod.
-     *
+     * Imposta il valore della propriet digestMethod.
+     * 
      * @param value
      *     allowed object is
      *     {@link DigestMethodType }
-     *
+     *     
      */
     public void setDigestMethod(DigestMethodType value) {
         this.digestMethod = value;
     }
 
     /**
-     * Recupera il valore della proprieta' digestValue.
-     *
+     * Recupera il valore della propriet digestValue.
+     * 
      * @return
      *     possible object is
      *     byte[]
@@ -129,8 +129,8 @@ public class ReferenceType {
     }
 
     /**
-     * Imposta il valore della proprieta' digestValue.
-     *
+     * Imposta il valore della propriet digestValue.
+     * 
      * @param value
      *     allowed object is
      *     byte[]
@@ -140,72 +140,72 @@ public class ReferenceType {
     }
 
     /**
-     * Recupera il valore della proprieta' id.
-     *
+     * Recupera il valore della propriet id.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getId() {
         return id;
     }
 
     /**
-     * Imposta il valore della proprieta' id.
-     *
+     * Imposta il valore della propriet id.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setId(String value) {
         this.id = value;
     }
 
     /**
-     * Recupera il valore della proprieta' uri.
-     *
+     * Recupera il valore della propriet uri.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getURI() {
         return uri;
     }
 
     /**
-     * Imposta il valore della proprieta' uri.
-     *
+     * Imposta il valore della propriet uri.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setURI(String value) {
         this.uri = value;
     }
 
     /**
-     * Recupera il valore della proprieta' type.
-     *
+     * Recupera il valore della propriet type.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getType() {
         return type;
     }
 
     /**
-     * Imposta il valore della proprieta' type.
-     *
+     * Imposta il valore della propriet type.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setType(String value) {
         this.type = value;

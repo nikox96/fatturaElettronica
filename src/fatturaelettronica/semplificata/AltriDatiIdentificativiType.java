@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:50 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:28:06 PM CET 
 //
 
 
@@ -19,9 +19,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 /**
  * <p>Classe Java per AltriDatiIdentificativiType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="AltriDatiIdentificativiType">
  *   &lt;complexContent>
@@ -44,8 +44,8 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "AltriDatiIdentificativiType", namespace = "http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.0", propOrder = {
@@ -78,144 +78,144 @@ public class AltriDatiIdentificativiType {
     protected RappresentanteFiscaleType rappresentanteFiscale;
 
     /**
-     * Recupera il valore della proprieta' denominazione.
-     *
+     * Recupera il valore della propriet denominazione.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getDenominazione() {
         return denominazione;
     }
 
     /**
-     * Imposta il valore della proprieta' denominazione.
-     *
+     * Imposta il valore della propriet denominazione.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setDenominazione(String value) {
         this.denominazione = value;
     }
 
     /**
-     * Recupera il valore della proprieta' nome.
-     *
+     * Recupera il valore della propriet nome.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getNome() {
         return nome;
     }
 
     /**
-     * Imposta il valore della proprieta' nome.
-     *
+     * Imposta il valore della propriet nome.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setNome(String value) {
         this.nome = value;
     }
 
     /**
-     * Recupera il valore della proprieta' cognome.
-     *
+     * Recupera il valore della propriet cognome.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getCognome() {
         return cognome;
     }
 
     /**
-     * Imposta il valore della proprieta' cognome.
-     *
+     * Imposta il valore della propriet cognome.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setCognome(String value) {
         this.cognome = value;
     }
 
     /**
-     * Recupera il valore della proprieta' sede.
-     *
+     * Recupera il valore della propriet sede.
+     * 
      * @return
      *     possible object is
      *     {@link IndirizzoType }
-     *
+     *     
      */
     public IndirizzoType getSede() {
         return sede;
     }
 
     /**
-     * Imposta il valore della proprieta' sede.
-     *
+     * Imposta il valore della propriet sede.
+     * 
      * @param value
      *     allowed object is
      *     {@link IndirizzoType }
-     *
+     *     
      */
     public void setSede(IndirizzoType value) {
         this.sede = value;
     }
 
     /**
-     * Recupera il valore della proprieta' stabileOrganizzazione.
-     *
+     * Recupera il valore della propriet stabileOrganizzazione.
+     * 
      * @return
      *     possible object is
      *     {@link IndirizzoType }
-     *
+     *     
      */
     public IndirizzoType getStabileOrganizzazione() {
         return stabileOrganizzazione;
     }
 
     /**
-     * Imposta il valore della proprieta' stabileOrganizzazione.
-     *
+     * Imposta il valore della propriet stabileOrganizzazione.
+     * 
      * @param value
      *     allowed object is
      *     {@link IndirizzoType }
-     *
+     *     
      */
     public void setStabileOrganizzazione(IndirizzoType value) {
         this.stabileOrganizzazione = value;
     }
 
     /**
-     * Recupera il valore della proprieta' rappresentanteFiscale.
-     *
+     * Recupera il valore della propriet rappresentanteFiscale.
+     * 
      * @return
      *     possible object is
      *     {@link RappresentanteFiscaleType }
-     *
+     *     
      */
     public RappresentanteFiscaleType getRappresentanteFiscale() {
         return rappresentanteFiscale;
     }
 
     /**
-     * Imposta il valore della proprieta' rappresentanteFiscale.
-     *
+     * Imposta il valore della propriet rappresentanteFiscale.
+     * 
      * @param value
      *     allowed object is
      *     {@link RappresentanteFiscaleType }
-     *
+     *     
      */
     public void setRappresentanteFiscale(RappresentanteFiscaleType value) {
         this.rappresentanteFiscale = value;

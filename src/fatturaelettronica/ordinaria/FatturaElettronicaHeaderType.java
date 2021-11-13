@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:21 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:27:08 PM CET 
 //
 
 
@@ -17,9 +17,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Classe Java per FatturaElettronicaHeaderType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="FatturaElettronicaHeaderType">
  *   &lt;complexContent>
@@ -36,8 +36,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "FatturaElettronicaHeaderType", propOrder = {
@@ -65,144 +65,144 @@ public class FatturaElettronicaHeaderType {
     protected SoggettoEmittenteType soggettoEmittente;
 
     /**
-     * Recupera il valore della proprieta' datiTrasmissione.
-     *
+     * Recupera il valore della propriet datiTrasmissione.
+     * 
      * @return
      *     possible object is
      *     {@link DatiTrasmissioneType }
-     *
+     *     
      */
     public DatiTrasmissioneType getDatiTrasmissione() {
         return datiTrasmissione;
     }
 
     /**
-     * Imposta il valore della proprieta' datiTrasmissione.
-     *
+     * Imposta il valore della propriet datiTrasmissione.
+     * 
      * @param value
      *     allowed object is
      *     {@link DatiTrasmissioneType }
-     *
+     *     
      */
     public void setDatiTrasmissione(DatiTrasmissioneType value) {
         this.datiTrasmissione = value;
     }
 
     /**
-     * Recupera il valore della proprieta' cedentePrestatore.
-     *
+     * Recupera il valore della propriet cedentePrestatore.
+     * 
      * @return
      *     possible object is
      *     {@link CedentePrestatoreType }
-     *
+     *     
      */
     public CedentePrestatoreType getCedentePrestatore() {
         return cedentePrestatore;
     }
 
     /**
-     * Imposta il valore della proprieta' cedentePrestatore.
-     *
+     * Imposta il valore della propriet cedentePrestatore.
+     * 
      * @param value
      *     allowed object is
      *     {@link CedentePrestatoreType }
-     *
+     *     
      */
     public void setCedentePrestatore(CedentePrestatoreType value) {
         this.cedentePrestatore = value;
     }
 
     /**
-     * Recupera il valore della proprieta' rappresentanteFiscale.
-     *
+     * Recupera il valore della propriet rappresentanteFiscale.
+     * 
      * @return
      *     possible object is
      *     {@link RappresentanteFiscaleType }
-     *
+     *     
      */
     public RappresentanteFiscaleType getRappresentanteFiscale() {
         return rappresentanteFiscale;
     }
 
     /**
-     * Imposta il valore della proprieta' rappresentanteFiscale.
-     *
+     * Imposta il valore della propriet rappresentanteFiscale.
+     * 
      * @param value
      *     allowed object is
      *     {@link RappresentanteFiscaleType }
-     *
+     *     
      */
     public void setRappresentanteFiscale(RappresentanteFiscaleType value) {
         this.rappresentanteFiscale = value;
     }
 
     /**
-     * Recupera il valore della proprieta' cessionarioCommittente.
-     *
+     * Recupera il valore della propriet cessionarioCommittente.
+     * 
      * @return
      *     possible object is
      *     {@link CessionarioCommittenteType }
-     *
+     *     
      */
     public CessionarioCommittenteType getCessionarioCommittente() {
         return cessionarioCommittente;
     }
 
     /**
-     * Imposta il valore della proprieta' cessionarioCommittente.
-     *
+     * Imposta il valore della propriet cessionarioCommittente.
+     * 
      * @param value
      *     allowed object is
      *     {@link CessionarioCommittenteType }
-     *
+     *     
      */
     public void setCessionarioCommittente(CessionarioCommittenteType value) {
         this.cessionarioCommittente = value;
     }
 
     /**
-     * Recupera il valore della proprieta' terzoIntermediarioOSoggettoEmittente.
-     *
+     * Recupera il valore della propriet terzoIntermediarioOSoggettoEmittente.
+     * 
      * @return
      *     possible object is
      *     {@link TerzoIntermediarioSoggettoEmittenteType }
-     *
+     *     
      */
     public TerzoIntermediarioSoggettoEmittenteType getTerzoIntermediarioOSoggettoEmittente() {
         return terzoIntermediarioOSoggettoEmittente;
     }
 
     /**
-     * Imposta il valore della proprieta' terzoIntermediarioOSoggettoEmittente.
-     *
+     * Imposta il valore della propriet terzoIntermediarioOSoggettoEmittente.
+     * 
      * @param value
      *     allowed object is
      *     {@link TerzoIntermediarioSoggettoEmittenteType }
-     *
+     *     
      */
     public void setTerzoIntermediarioOSoggettoEmittente(TerzoIntermediarioSoggettoEmittenteType value) {
         this.terzoIntermediarioOSoggettoEmittente = value;
     }
 
     /**
-     * Recupera il valore della proprieta' soggettoEmittente.
-     *
+     * Recupera il valore della propriet soggettoEmittente.
+     * 
      * @return
      *     possible object is
      *     {@link SoggettoEmittenteType }
-     *
+     *     
      */
     public SoggettoEmittenteType getSoggettoEmittente() {
         return soggettoEmittente;
     }
 
     /**
-     * Imposta il valore della proprieta' soggettoEmittente.
-     *
+     * Imposta il valore della propriet soggettoEmittente.
+     * 
      * @param value
      *     allowed object is
      *     {@link SoggettoEmittenteType }
-     *
+     *     
      */
     public void setSoggettoEmittente(SoggettoEmittenteType value) {
         this.soggettoEmittente = value;

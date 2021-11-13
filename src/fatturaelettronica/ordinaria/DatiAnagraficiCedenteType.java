@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:21 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:27:08 PM CET 
 //
 
 
@@ -20,9 +20,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 /**
  * <p>Classe Java per DatiAnagraficiCedenteType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="DatiAnagraficiCedenteType">
  *   &lt;complexContent>
@@ -41,8 +41,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DatiAnagraficiCedenteType", propOrder = {
@@ -81,192 +81,192 @@ public class DatiAnagraficiCedenteType {
     protected RegimeFiscaleType regimeFiscale;
 
     /**
-     * Recupera il valore della proprieta' idFiscaleIVA.
-     *
+     * Recupera il valore della propriet idFiscaleIVA.
+     * 
      * @return
      *     possible object is
      *     {@link IdFiscaleType }
-     *
+     *     
      */
     public IdFiscaleType getIdFiscaleIVA() {
         return idFiscaleIVA;
     }
 
     /**
-     * Imposta il valore della proprieta' idFiscaleIVA.
-     *
+     * Imposta il valore della propriet idFiscaleIVA.
+     * 
      * @param value
      *     allowed object is
      *     {@link IdFiscaleType }
-     *
+     *     
      */
     public void setIdFiscaleIVA(IdFiscaleType value) {
         this.idFiscaleIVA = value;
     }
 
     /**
-     * Recupera il valore della proprieta' codiceFiscale.
-     *
+     * Recupera il valore della propriet codiceFiscale.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getCodiceFiscale() {
         return codiceFiscale;
     }
 
     /**
-     * Imposta il valore della proprieta' codiceFiscale.
-     *
+     * Imposta il valore della propriet codiceFiscale.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setCodiceFiscale(String value) {
         this.codiceFiscale = value;
     }
 
     /**
-     * Recupera il valore della proprieta' anagrafica.
-     *
+     * Recupera il valore della propriet anagrafica.
+     * 
      * @return
      *     possible object is
      *     {@link AnagraficaType }
-     *
+     *     
      */
     public AnagraficaType getAnagrafica() {
         return anagrafica;
     }
 
     /**
-     * Imposta il valore della proprieta' anagrafica.
-     *
+     * Imposta il valore della propriet anagrafica.
+     * 
      * @param value
      *     allowed object is
      *     {@link AnagraficaType }
-     *
+     *     
      */
     public void setAnagrafica(AnagraficaType value) {
         this.anagrafica = value;
     }
 
     /**
-     * Recupera il valore della proprieta' alboProfessionale.
-     *
+     * Recupera il valore della propriet alboProfessionale.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getAlboProfessionale() {
         return alboProfessionale;
     }
 
     /**
-     * Imposta il valore della proprieta' alboProfessionale.
-     *
+     * Imposta il valore della propriet alboProfessionale.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setAlboProfessionale(String value) {
         this.alboProfessionale = value;
     }
 
     /**
-     * Recupera il valore della proprieta' provinciaAlbo.
-     *
+     * Recupera il valore della propriet provinciaAlbo.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getProvinciaAlbo() {
         return provinciaAlbo;
     }
 
     /**
-     * Imposta il valore della proprieta' provinciaAlbo.
-     *
+     * Imposta il valore della propriet provinciaAlbo.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setProvinciaAlbo(String value) {
         this.provinciaAlbo = value;
     }
 
     /**
-     * Recupera il valore della proprieta' numeroIscrizioneAlbo.
-     *
+     * Recupera il valore della propriet numeroIscrizioneAlbo.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getNumeroIscrizioneAlbo() {
         return numeroIscrizioneAlbo;
     }
 
     /**
-     * Imposta il valore della proprieta' numeroIscrizioneAlbo.
-     *
+     * Imposta il valore della propriet numeroIscrizioneAlbo.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setNumeroIscrizioneAlbo(String value) {
         this.numeroIscrizioneAlbo = value;
     }
 
     /**
-     * Recupera il valore della proprieta' dataIscrizioneAlbo.
-     *
+     * Recupera il valore della propriet dataIscrizioneAlbo.
+     * 
      * @return
      *     possible object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public XMLGregorianCalendar getDataIscrizioneAlbo() {
         return dataIscrizioneAlbo;
     }
 
     /**
-     * Imposta il valore della proprieta' dataIscrizioneAlbo.
-     *
+     * Imposta il valore della propriet dataIscrizioneAlbo.
+     * 
      * @param value
      *     allowed object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public void setDataIscrizioneAlbo(XMLGregorianCalendar value) {
         this.dataIscrizioneAlbo = value;
     }
 
     /**
-     * Recupera il valore della proprieta' regimeFiscale.
-     *
+     * Recupera il valore della propriet regimeFiscale.
+     * 
      * @return
      *     possible object is
      *     {@link RegimeFiscaleType }
-     *
+     *     
      */
     public RegimeFiscaleType getRegimeFiscale() {
         return regimeFiscale;
     }
 
     /**
-     * Imposta il valore della proprieta' regimeFiscale.
-     *
+     * Imposta il valore della propriet regimeFiscale.
+     * 
      * @param value
      *     allowed object is
      *     {@link RegimeFiscaleType }
-     *
+     *     
      */
     public void setRegimeFiscale(RegimeFiscaleType value) {
         this.regimeFiscale = value;

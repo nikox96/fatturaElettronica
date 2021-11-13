@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:21 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:27:08 PM CET 
 //
 
 
@@ -19,9 +19,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 /**
  * <p>Classe Java per ContattiType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="ContattiType">
  *   &lt;complexContent>
@@ -35,8 +35,8 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ContattiType", propOrder = {
@@ -58,72 +58,72 @@ public class ContattiType {
     protected String email;
 
     /**
-     * Recupera il valore della proprieta' telefono.
-     *
+     * Recupera il valore della propriet telefono.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getTelefono() {
         return telefono;
     }
 
     /**
-     * Imposta il valore della proprieta' telefono.
-     *
+     * Imposta il valore della propriet telefono.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setTelefono(String value) {
         this.telefono = value;
     }
 
     /**
-     * Recupera il valore della proprieta' fax.
-     *
+     * Recupera il valore della propriet fax.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getFax() {
         return fax;
     }
 
     /**
-     * Imposta il valore della proprieta' fax.
-     *
+     * Imposta il valore della propriet fax.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setFax(String value) {
         this.fax = value;
     }
 
     /**
-     * Recupera il valore della proprieta' email.
-     *
+     * Recupera il valore della propriet email.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getEmail() {
         return email;
     }
 
     /**
-     * Imposta il valore della proprieta' email.
-     *
+     * Imposta il valore della propriet email.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setEmail(String value) {
         this.email = value;

@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:50 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:28:06 PM CET 
 //
 
 
@@ -19,12 +19,12 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * Blocco relativo ai dati di Beni Servizi della Fattura  Elettronica
- *
+ * Blocco relativo ai dati di Beni Servizi della Fattura	Elettronica
+ * 
  * <p>Classe Java per DatiBeniServiziType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="DatiBeniServiziType">
  *   &lt;complexContent>
@@ -40,8 +40,8 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DatiBeniServiziType", namespace = "http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.0", propOrder = {
@@ -70,120 +70,120 @@ public class DatiBeniServiziType {
     protected String riferimentoNormativo;
 
     /**
-     * Recupera il valore della proprieta' descrizione.
-     *
+     * Recupera il valore della propriet descrizione.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getDescrizione() {
         return descrizione;
     }
 
     /**
-     * Imposta il valore della proprieta' descrizione.
-     *
+     * Imposta il valore della propriet descrizione.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setDescrizione(String value) {
         this.descrizione = value;
     }
 
     /**
-     * Recupera il valore della proprieta' importo.
-     *
+     * Recupera il valore della propriet importo.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getImporto() {
         return importo;
     }
 
     /**
-     * Imposta il valore della proprieta' importo.
-     *
+     * Imposta il valore della propriet importo.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setImporto(BigDecimal value) {
         this.importo = value;
     }
 
     /**
-     * Recupera il valore della proprieta' datiIVA.
-     *
+     * Recupera il valore della propriet datiIVA.
+     * 
      * @return
      *     possible object is
      *     {@link DatiIVAType }
-     *
+     *     
      */
     public DatiIVAType getDatiIVA() {
         return datiIVA;
     }
 
     /**
-     * Imposta il valore della proprieta' datiIVA.
-     *
+     * Imposta il valore della propriet datiIVA.
+     * 
      * @param value
      *     allowed object is
      *     {@link DatiIVAType }
-     *
+     *     
      */
     public void setDatiIVA(DatiIVAType value) {
         this.datiIVA = value;
     }
 
     /**
-     * Recupera il valore della proprieta' natura.
-     *
+     * Recupera il valore della propriet natura.
+     * 
      * @return
      *     possible object is
      *     {@link NaturaType }
-     *
+     *     
      */
     public NaturaType getNatura() {
         return natura;
     }
 
     /**
-     * Imposta il valore della proprieta' natura.
-     *
+     * Imposta il valore della propriet natura.
+     * 
      * @param value
      *     allowed object is
      *     {@link NaturaType }
-     *
+     *     
      */
     public void setNatura(NaturaType value) {
         this.natura = value;
     }
 
     /**
-     * Recupera il valore della proprieta' riferimentoNormativo.
-     *
+     * Recupera il valore della propriet riferimentoNormativo.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getRiferimentoNormativo() {
         return riferimentoNormativo;
     }
 
     /**
-     * Imposta il valore della proprieta' riferimentoNormativo.
-     *
+     * Imposta il valore della propriet riferimentoNormativo.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setRiferimentoNormativo(String value) {
         this.riferimentoNormativo = value;

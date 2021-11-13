@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:21 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:27:08 PM CET 
 //
 
 
@@ -19,11 +19,11 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 /**
  * Blocco relativo ai dati del Cedente / Prestatore
- *
+ * 
  * <p>Classe Java per CedentePrestatoreType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="CedentePrestatoreType">
  *   &lt;complexContent>
@@ -40,8 +40,8 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "CedentePrestatoreType", propOrder = {
@@ -70,144 +70,144 @@ public class CedentePrestatoreType {
     protected String riferimentoAmministrazione;
 
     /**
-     * Recupera il valore della proprieta' datiAnagrafici.
-     *
+     * Recupera il valore della propriet datiAnagrafici.
+     * 
      * @return
      *     possible object is
      *     {@link DatiAnagraficiCedenteType }
-     *
+     *     
      */
     public DatiAnagraficiCedenteType getDatiAnagrafici() {
         return datiAnagrafici;
     }
 
     /**
-     * Imposta il valore della proprieta' datiAnagrafici.
-     *
+     * Imposta il valore della propriet datiAnagrafici.
+     * 
      * @param value
      *     allowed object is
      *     {@link DatiAnagraficiCedenteType }
-     *
+     *     
      */
     public void setDatiAnagrafici(DatiAnagraficiCedenteType value) {
         this.datiAnagrafici = value;
     }
 
     /**
-     * Recupera il valore della proprieta' sede.
-     *
+     * Recupera il valore della propriet sede.
+     * 
      * @return
      *     possible object is
      *     {@link IndirizzoType }
-     *
+     *     
      */
     public IndirizzoType getSede() {
         return sede;
     }
 
     /**
-     * Imposta il valore della proprieta' sede.
-     *
+     * Imposta il valore della propriet sede.
+     * 
      * @param value
      *     allowed object is
      *     {@link IndirizzoType }
-     *
+     *     
      */
     public void setSede(IndirizzoType value) {
         this.sede = value;
     }
 
     /**
-     * Recupera il valore della proprieta' stabileOrganizzazione.
-     *
+     * Recupera il valore della propriet stabileOrganizzazione.
+     * 
      * @return
      *     possible object is
      *     {@link IndirizzoType }
-     *
+     *     
      */
     public IndirizzoType getStabileOrganizzazione() {
         return stabileOrganizzazione;
     }
 
     /**
-     * Imposta il valore della proprieta' stabileOrganizzazione.
-     *
+     * Imposta il valore della propriet stabileOrganizzazione.
+     * 
      * @param value
      *     allowed object is
      *     {@link IndirizzoType }
-     *
+     *     
      */
     public void setStabileOrganizzazione(IndirizzoType value) {
         this.stabileOrganizzazione = value;
     }
 
     /**
-     * Recupera il valore della proprieta' iscrizioneREA.
-     *
+     * Recupera il valore della propriet iscrizioneREA.
+     * 
      * @return
      *     possible object is
      *     {@link IscrizioneREAType }
-     *
+     *     
      */
     public IscrizioneREAType getIscrizioneREA() {
         return iscrizioneREA;
     }
 
     /**
-     * Imposta il valore della proprieta' iscrizioneREA.
-     *
+     * Imposta il valore della propriet iscrizioneREA.
+     * 
      * @param value
      *     allowed object is
      *     {@link IscrizioneREAType }
-     *
+     *     
      */
     public void setIscrizioneREA(IscrizioneREAType value) {
         this.iscrizioneREA = value;
     }
 
     /**
-     * Recupera il valore della proprieta' contatti.
-     *
+     * Recupera il valore della propriet contatti.
+     * 
      * @return
      *     possible object is
      *     {@link ContattiType }
-     *
+     *     
      */
     public ContattiType getContatti() {
         return contatti;
     }
 
     /**
-     * Imposta il valore della proprieta' contatti.
-     *
+     * Imposta il valore della propriet contatti.
+     * 
      * @param value
      *     allowed object is
      *     {@link ContattiType }
-     *
+     *     
      */
     public void setContatti(ContattiType value) {
         this.contatti = value;
     }
 
     /**
-     * Recupera il valore della proprieta' riferimentoAmministrazione.
-     *
+     * Recupera il valore della propriet riferimentoAmministrazione.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getRiferimentoAmministrazione() {
         return riferimentoAmministrazione;
     }
 
     /**
-     * Imposta il valore della proprieta' riferimentoAmministrazione.
-     *
+     * Imposta il valore della propriet riferimentoAmministrazione.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setRiferimentoAmministrazione(String value) {
         this.riferimentoAmministrazione = value;

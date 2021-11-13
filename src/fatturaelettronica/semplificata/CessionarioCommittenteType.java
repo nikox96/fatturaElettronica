@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:50 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:28:06 PM CET 
 //
 
 
@@ -16,11 +16,11 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * Blocco relativo ai dati del Cessionario / Committente
- *
+ * 
  * <p>Classe Java per CessionarioCommittenteType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="CessionarioCommittenteType">
  *   &lt;complexContent>
@@ -33,8 +33,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "CessionarioCommittenteType", namespace = "http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.0", propOrder = {
@@ -49,48 +49,48 @@ public class CessionarioCommittenteType {
     protected AltriDatiIdentificativiType altriDatiIdentificativi;
 
     /**
-     * Recupera il valore della proprieta' identificativiFiscali.
-     *
+     * Recupera il valore della propriet identificativiFiscali.
+     * 
      * @return
      *     possible object is
      *     {@link IdentificativiFiscaliType }
-     *
+     *     
      */
     public IdentificativiFiscaliType getIdentificativiFiscali() {
         return identificativiFiscali;
     }
 
     /**
-     * Imposta il valore della proprieta' identificativiFiscali.
-     *
+     * Imposta il valore della propriet identificativiFiscali.
+     * 
      * @param value
      *     allowed object is
      *     {@link IdentificativiFiscaliType }
-     *
+     *     
      */
     public void setIdentificativiFiscali(IdentificativiFiscaliType value) {
         this.identificativiFiscali = value;
     }
 
     /**
-     * Recupera il valore della proprieta' altriDatiIdentificativi.
-     *
+     * Recupera il valore della propriet altriDatiIdentificativi.
+     * 
      * @return
      *     possible object is
      *     {@link AltriDatiIdentificativiType }
-     *
+     *     
      */
     public AltriDatiIdentificativiType getAltriDatiIdentificativi() {
         return altriDatiIdentificativi;
     }
 
     /**
-     * Imposta il valore della proprieta' altriDatiIdentificativi.
-     *
+     * Imposta il valore della propriet altriDatiIdentificativi.
+     * 
      * @param value
      *     allowed object is
      *     {@link AltriDatiIdentificativiType }
-     *
+     *     
      */
     public void setAltriDatiIdentificativi(AltriDatiIdentificativiType value) {
         this.altriDatiIdentificativi = value;

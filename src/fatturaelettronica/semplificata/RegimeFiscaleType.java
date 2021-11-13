@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:50 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:28:06 PM CET 
 //
 
 
@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Classe Java per RegimeFiscaleType.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
  * <p>
  * <pre>
@@ -43,7 +43,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
- *
+ * 
  */
 @XmlType(name = "RegimeFiscaleType", namespace = "http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.0")
 @XmlEnum
@@ -52,126 +52,126 @@ public enum RegimeFiscaleType {
 
     /**
      *  Regime ordinario
-     *
+     * 
      */
     @XmlEnumValue("RF01")
     RF_01("RF01"),
 
     /**
      * Regime dei contribuenti minimi (art. 1,c.96-117, L. 244/2007)
-     *
+     * 
      */
     @XmlEnumValue("RF02")
     RF_02("RF02"),
 
     /**
-     * Agricoltura e attivita' connesse e pesca (artt. 34 e 34-bis, D.P.R. 633/1972)
-     *
+     * Agricoltura e attivit connesse e pesca (artt. 34 e 34-bis, D.P.R. 633/1972)
+     * 
      */
     @XmlEnumValue("RF04")
     RF_04("RF04"),
 
     /**
      * Vendita sali e tabacchi (art. 74, c.1, D.P.R. 633/1972)
-     *
+     * 
      */
     @XmlEnumValue("RF05")
     RF_05("RF05"),
 
     /**
      * Commercio dei fiammiferi (art. 74, c.1, D.P.R. 633/1972)
-     *
+     * 
      */
     @XmlEnumValue("RF06")
     RF_06("RF06"),
 
     /**
      * Editoria (art. 74, c.1, D.P.R. 633/1972)
-     *
+     * 
      */
     @XmlEnumValue("RF07")
     RF_07("RF07"),
 
     /**
      * Gestione di servizi di telefonia pubblica (art. 74, c.1, D.P.R. 633/1972)
-     *
+     * 
      */
     @XmlEnumValue("RF08")
     RF_08("RF08"),
 
     /**
      * Rivendita di documenti di trasporto pubblico e di sosta (art. 74, c.1, D.P.R. 633/1972)
-     *
+     * 
      */
     @XmlEnumValue("RF09")
     RF_09("RF09"),
 
     /**
-     * Intrattenimenti, giochi e altre attivita' di cui alla tariffa allegata al D.P.R. 640/72 (art. 74, c.6, D.P.R. 633/1972)
-     *
+     * Intrattenimenti, giochi e altre attivit	di cui alla tariffa allegata al D.P.R. 640/72 (art. 74, c.6, D.P.R. 633/1972)
+     * 
      */
     @XmlEnumValue("RF10")
     RF_10("RF10"),
 
     /**
      * Agenzie di viaggi e turismo (art. 74-ter, D.P.R. 633/1972)
-     *
+     * 
      */
     @XmlEnumValue("RF11")
     RF_11("RF11"),
 
     /**
      * Agriturismo (art. 5, c.2, L. 413/1991)
-     *
+     * 
      */
     @XmlEnumValue("RF12")
     RF_12("RF12"),
 
     /**
      * Vendite a domicilio (art. 25-bis, c.6, D.P.R. 600/1973)
-     *
+     * 
      */
     @XmlEnumValue("RF13")
     RF_13("RF13"),
 
     /**
-     * Rivendita di beni usati, di oggetti  d'arte, d'antiquariato o da collezione (art.  36, D.L. 41/1995)
-     *
+     * Rivendita di beni usati, di oggetti	darte, dantiquariato o da collezione (art.	36, D.L. 41/1995)
+     * 
      */
     @XmlEnumValue("RF14")
     RF_14("RF14"),
 
     /**
-     * Agenzie di vendite all'asta di oggetti d'arte, antiquariato o da collezione (art. 40-bis, D.L. 41/1995)
-     *
+     * Agenzie di vendite allasta di oggetti darte, antiquariato o da collezione (art. 40-bis, D.L. 41/1995)
+     * 
      */
     @XmlEnumValue("RF15")
     RF_15("RF15"),
 
     /**
      * IVA per cassa P.A. (art. 6, c.5, D.P.R. 633/1972)
-     *
+     * 
      */
     @XmlEnumValue("RF16")
     RF_16("RF16"),
 
     /**
      * IVA per cassa (art. 32-bis, D.L. 83/2012)
-     *
+     * 
      */
     @XmlEnumValue("RF17")
     RF_17("RF17"),
 
     /**
      * Regime forfettario
-     *
+     * 
      */
     @XmlEnumValue("RF19")
     RF_19("RF19"),
 
     /**
      * Altro
-     *
+     * 
      */
     @XmlEnumValue("RF18")
     RF_18("RF18");

@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:21 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:27:08 PM CET 
 //
 
 
@@ -23,9 +23,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 /**
  * <p>Classe Java per DettaglioLineeType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="DettaglioLineeType">
  *   &lt;complexContent>
@@ -52,8 +52,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DettaglioLineeType", propOrder = {
@@ -122,40 +122,40 @@ public class DettaglioLineeType {
     protected List<AltriDatiGestionaliType> altriDatiGestionali;
 
     /**
-     * Recupera il valore della proprieta' numeroLinea.
-     *
+     * Recupera il valore della propriet numeroLinea.
+     * 
      */
     public int getNumeroLinea() {
         return numeroLinea;
     }
 
     /**
-     * Imposta il valore della proprieta' numeroLinea.
-     *
+     * Imposta il valore della propriet numeroLinea.
+     * 
      */
     public void setNumeroLinea(int value) {
         this.numeroLinea = value;
     }
 
     /**
-     * Recupera il valore della proprieta' tipoCessionePrestazione.
-     *
+     * Recupera il valore della propriet tipoCessionePrestazione.
+     * 
      * @return
      *     possible object is
      *     {@link TipoCessionePrestazioneType }
-     *
+     *     
      */
     public TipoCessionePrestazioneType getTipoCessionePrestazione() {
         return tipoCessionePrestazione;
     }
 
     /**
-     * Imposta il valore della proprieta' tipoCessionePrestazione.
-     *
+     * Imposta il valore della propriet tipoCessionePrestazione.
+     * 
      * @param value
      *     allowed object is
      *     {@link TipoCessionePrestazioneType }
-     *
+     *     
      */
     public void setTipoCessionePrestazione(TipoCessionePrestazioneType value) {
         this.tipoCessionePrestazione = value;
@@ -163,25 +163,25 @@ public class DettaglioLineeType {
 
     /**
      * Gets the value of the codiceArticolo property.
-     *
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the codiceArticolo property.
-     *
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getCodiceArticolo().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link CodiceArticoloType }
-     *
-     *
+     * 
+     * 
      */
     public List<CodiceArticoloType> getCodiceArticolo() {
         if (codiceArticolo == null) {
@@ -191,144 +191,144 @@ public class DettaglioLineeType {
     }
 
     /**
-     * Recupera il valore della proprieta' descrizione.
-     *
+     * Recupera il valore della propriet descrizione.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getDescrizione() {
         return descrizione;
     }
 
     /**
-     * Imposta il valore della proprieta' descrizione.
-     *
+     * Imposta il valore della propriet descrizione.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setDescrizione(String value) {
         this.descrizione = value;
     }
 
     /**
-     * Recupera il valore della proprieta' quantita.
-     *
+     * Recupera il valore della propriet quantita.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getQuantita() {
         return quantita;
     }
 
     /**
-     * Imposta il valore della proprieta' quantita.
-     *
+     * Imposta il valore della propriet quantita.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setQuantita(BigDecimal value) {
         this.quantita = value;
     }
 
     /**
-     * Recupera il valore della proprieta' unitaMisura.
-     *
+     * Recupera il valore della propriet unitaMisura.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getUnitaMisura() {
         return unitaMisura;
     }
 
     /**
-     * Imposta il valore della proprieta' unitaMisura.
-     *
+     * Imposta il valore della propriet unitaMisura.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setUnitaMisura(String value) {
         this.unitaMisura = value;
     }
 
     /**
-     * Recupera il valore della proprieta' dataInizioPeriodo.
-     *
+     * Recupera il valore della propriet dataInizioPeriodo.
+     * 
      * @return
      *     possible object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public XMLGregorianCalendar getDataInizioPeriodo() {
         return dataInizioPeriodo;
     }
 
     /**
-     * Imposta il valore della proprieta' dataInizioPeriodo.
-     *
+     * Imposta il valore della propriet dataInizioPeriodo.
+     * 
      * @param value
      *     allowed object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public void setDataInizioPeriodo(XMLGregorianCalendar value) {
         this.dataInizioPeriodo = value;
     }
 
     /**
-     * Recupera il valore della proprieta' dataFinePeriodo.
-     *
+     * Recupera il valore della propriet dataFinePeriodo.
+     * 
      * @return
      *     possible object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public XMLGregorianCalendar getDataFinePeriodo() {
         return dataFinePeriodo;
     }
 
     /**
-     * Imposta il valore della proprieta' dataFinePeriodo.
-     *
+     * Imposta il valore della propriet dataFinePeriodo.
+     * 
      * @param value
      *     allowed object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public void setDataFinePeriodo(XMLGregorianCalendar value) {
         this.dataFinePeriodo = value;
     }
 
     /**
-     * Recupera il valore della proprieta' prezzoUnitario.
-     *
+     * Recupera il valore della propriet prezzoUnitario.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getPrezzoUnitario() {
         return prezzoUnitario;
     }
 
     /**
-     * Imposta il valore della proprieta' prezzoUnitario.
-     *
+     * Imposta il valore della propriet prezzoUnitario.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setPrezzoUnitario(BigDecimal value) {
         this.prezzoUnitario = value;
@@ -336,25 +336,25 @@ public class DettaglioLineeType {
 
     /**
      * Gets the value of the scontoMaggiorazione property.
-     *
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the scontoMaggiorazione property.
-     *
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getScontoMaggiorazione().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link ScontoMaggiorazioneType }
-     *
-     *
+     * 
+     * 
      */
     public List<ScontoMaggiorazioneType> getScontoMaggiorazione() {
         if (scontoMaggiorazione == null) {
@@ -364,120 +364,120 @@ public class DettaglioLineeType {
     }
 
     /**
-     * Recupera il valore della proprieta' prezzoTotale.
-     *
+     * Recupera il valore della propriet prezzoTotale.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getPrezzoTotale() {
         return prezzoTotale;
     }
 
     /**
-     * Imposta il valore della proprieta' prezzoTotale.
-     *
+     * Imposta il valore della propriet prezzoTotale.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setPrezzoTotale(BigDecimal value) {
         this.prezzoTotale = value;
     }
 
     /**
-     * Recupera il valore della proprieta' aliquotaIVA.
-     *
+     * Recupera il valore della propriet aliquotaIVA.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getAliquotaIVA() {
         return aliquotaIVA;
     }
 
     /**
-     * Imposta il valore della proprieta' aliquotaIVA.
-     *
+     * Imposta il valore della propriet aliquotaIVA.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setAliquotaIVA(BigDecimal value) {
         this.aliquotaIVA = value;
     }
 
     /**
-     * Recupera il valore della proprieta' ritenuta.
-     *
+     * Recupera il valore della propriet ritenuta.
+     * 
      * @return
      *     possible object is
      *     {@link RitenutaType }
-     *
+     *     
      */
     public RitenutaType getRitenuta() {
         return ritenuta;
     }
 
     /**
-     * Imposta il valore della proprieta' ritenuta.
-     *
+     * Imposta il valore della propriet ritenuta.
+     * 
      * @param value
      *     allowed object is
      *     {@link RitenutaType }
-     *
+     *     
      */
     public void setRitenuta(RitenutaType value) {
         this.ritenuta = value;
     }
 
     /**
-     * Recupera il valore della proprieta' natura.
-     *
+     * Recupera il valore della propriet natura.
+     * 
      * @return
      *     possible object is
      *     {@link NaturaType }
-     *
+     *     
      */
     public NaturaType getNatura() {
         return natura;
     }
 
     /**
-     * Imposta il valore della proprieta' natura.
-     *
+     * Imposta il valore della propriet natura.
+     * 
      * @param value
      *     allowed object is
      *     {@link NaturaType }
-     *
+     *     
      */
     public void setNatura(NaturaType value) {
         this.natura = value;
     }
 
     /**
-     * Recupera il valore della proprieta' riferimentoAmministrazione.
-     *
+     * Recupera il valore della propriet riferimentoAmministrazione.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getRiferimentoAmministrazione() {
         return riferimentoAmministrazione;
     }
 
     /**
-     * Imposta il valore della proprieta' riferimentoAmministrazione.
-     *
+     * Imposta il valore della propriet riferimentoAmministrazione.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setRiferimentoAmministrazione(String value) {
         this.riferimentoAmministrazione = value;
@@ -485,25 +485,25 @@ public class DettaglioLineeType {
 
     /**
      * Gets the value of the altriDatiGestionali property.
-     *
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the altriDatiGestionali property.
-     *
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getAltriDatiGestionali().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link AltriDatiGestionaliType }
-     *
-     *
+     * 
+     * 
      */
     public List<AltriDatiGestionaliType> getAltriDatiGestionali() {
         if (altriDatiGestionali == null) {

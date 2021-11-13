@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
 // Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Qualsiasi modifica a questo file andr� persa durante la ricompilazione dello schema di origine. 
-// Generato il: 2020.10.05 alle 08:33:21 PM CEST 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:27:08 PM CET 
 //
 
 
@@ -56,7 +56,7 @@ public enum NaturaType {
 
 
     /**
-     * Escluse ex. art. 15
+     * Escluse ex. art. 15 del D.P.R. 633/1972
      * 
      */
     @XmlEnumValue("N1")
@@ -161,7 +161,7 @@ public enum NaturaType {
     N_6_1("N6.1"),
 
     /**
-     * Inversione contabile - cessione di oro e argento puro
+     * Inversione contabile - cessione di oro e argento ai sensi della legge 7/2000 nonch di oreficeria usata ad OPO
      * 
      */
     @XmlEnumValue("N6.2")
@@ -217,7 +217,7 @@ public enum NaturaType {
     N_6_9("N6.9"),
 
     /**
-     * IVA assolta in altro stato UE (vendite a distanza ex art. 40 commi 3 e 4 e art. 41 comma 1 lett. b, DL 331/93; prestazione di servizi di telecomunicazioni, tele-radiodiffusione ed elettronici ex art. 7-sexies lett. f, g, DPR 633/72 e art. 74-sexies, DPR 633/72)
+     * IVA assolta in altro stato UE (prestazione di servizi di telecomunicazioni, tele-radiodiffusione ed elettronici ex art. 7-sexies lett. f, g, art. 74-sexies DPR 633/72)
      * 
      */
     @XmlEnumValue("N7")

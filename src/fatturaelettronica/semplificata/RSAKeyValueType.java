@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:50 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:28:06 PM CET 
 //
 
 
@@ -16,9 +16,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Classe Java per RSAKeyValueType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="RSAKeyValueType">
  *   &lt;complexContent>
@@ -31,8 +31,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "RSAKeyValueType", propOrder = {
@@ -47,8 +47,8 @@ public class RSAKeyValueType {
     protected byte[] exponent;
 
     /**
-     * Recupera il valore della proprieta' modulus.
-     *
+     * Recupera il valore della propriet modulus.
+     * 
      * @return
      *     possible object is
      *     byte[]
@@ -58,8 +58,8 @@ public class RSAKeyValueType {
     }
 
     /**
-     * Imposta il valore della proprieta' modulus.
-     *
+     * Imposta il valore della propriet modulus.
+     * 
      * @param value
      *     allowed object is
      *     byte[]
@@ -69,8 +69,8 @@ public class RSAKeyValueType {
     }
 
     /**
-     * Recupera il valore della proprieta' exponent.
-     *
+     * Recupera il valore della propriet exponent.
+     * 
      * @return
      *     possible object is
      *     byte[]
@@ -80,8 +80,8 @@ public class RSAKeyValueType {
     }
 
     /**
-     * Imposta il valore della proprieta' exponent.
-     *
+     * Imposta il valore della propriet exponent.
+     * 
      * @param value
      *     allowed object is
      *     byte[]

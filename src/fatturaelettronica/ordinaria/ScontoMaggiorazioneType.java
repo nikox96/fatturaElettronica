@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:21 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:27:08 PM CET 
 //
 
 
@@ -18,9 +18,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Classe Java per ScontoMaggiorazioneType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="ScontoMaggiorazioneType">
  *   &lt;complexContent>
@@ -34,8 +34,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "ScontoMaggiorazioneType", propOrder = {
@@ -54,72 +54,72 @@ public class ScontoMaggiorazioneType {
     protected BigDecimal importo;
 
     /**
-     * Recupera il valore della proprieta' tipo.
-     *
+     * Recupera il valore della propriet tipo.
+     * 
      * @return
      *     possible object is
      *     {@link TipoScontoMaggiorazioneType }
-     *
+     *     
      */
     public TipoScontoMaggiorazioneType getTipo() {
         return tipo;
     }
 
     /**
-     * Imposta il valore della proprieta' tipo.
-     *
+     * Imposta il valore della propriet tipo.
+     * 
      * @param value
      *     allowed object is
      *     {@link TipoScontoMaggiorazioneType }
-     *
+     *     
      */
     public void setTipo(TipoScontoMaggiorazioneType value) {
         this.tipo = value;
     }
 
     /**
-     * Recupera il valore della proprieta' percentuale.
-     *
+     * Recupera il valore della propriet percentuale.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getPercentuale() {
         return percentuale;
     }
 
     /**
-     * Imposta il valore della proprieta' percentuale.
-     *
+     * Imposta il valore della propriet percentuale.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setPercentuale(BigDecimal value) {
         this.percentuale = value;
     }
 
     /**
-     * Recupera il valore della proprieta' importo.
-     *
+     * Recupera il valore della propriet importo.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getImporto() {
         return importo;
     }
 
     /**
-     * Imposta il valore della proprieta' importo.
-     *
+     * Imposta il valore della propriet importo.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setImporto(BigDecimal value) {
         this.importo = value;

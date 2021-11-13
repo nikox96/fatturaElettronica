@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:21 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:27:08 PM CET 
 //
 
 
@@ -21,9 +21,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 /**
  * <p>Classe Java per DatiTrasportoType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="DatiTrasportoType">
  *   &lt;complexContent>
@@ -47,8 +47,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DatiTrasportoType", propOrder = {
@@ -108,312 +108,312 @@ public class DatiTrasportoType {
     protected XMLGregorianCalendar dataOraConsegna;
 
     /**
-     * Recupera il valore della proprieta' datiAnagraficiVettore.
-     *
+     * Recupera il valore della propriet datiAnagraficiVettore.
+     * 
      * @return
      *     possible object is
      *     {@link DatiAnagraficiVettoreType }
-     *
+     *     
      */
     public DatiAnagraficiVettoreType getDatiAnagraficiVettore() {
         return datiAnagraficiVettore;
     }
 
     /**
-     * Imposta il valore della proprieta' datiAnagraficiVettore.
-     *
+     * Imposta il valore della propriet datiAnagraficiVettore.
+     * 
      * @param value
      *     allowed object is
      *     {@link DatiAnagraficiVettoreType }
-     *
+     *     
      */
     public void setDatiAnagraficiVettore(DatiAnagraficiVettoreType value) {
         this.datiAnagraficiVettore = value;
     }
 
     /**
-     * Recupera il valore della proprieta' mezzoTrasporto.
-     *
+     * Recupera il valore della propriet mezzoTrasporto.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getMezzoTrasporto() {
         return mezzoTrasporto;
     }
 
     /**
-     * Imposta il valore della proprieta' mezzoTrasporto.
-     *
+     * Imposta il valore della propriet mezzoTrasporto.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setMezzoTrasporto(String value) {
         this.mezzoTrasporto = value;
     }
 
     /**
-     * Recupera il valore della proprieta' causaleTrasporto.
-     *
+     * Recupera il valore della propriet causaleTrasporto.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getCausaleTrasporto() {
         return causaleTrasporto;
     }
 
     /**
-     * Imposta il valore della proprieta' causaleTrasporto.
-     *
+     * Imposta il valore della propriet causaleTrasporto.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setCausaleTrasporto(String value) {
         this.causaleTrasporto = value;
     }
 
     /**
-     * Recupera il valore della proprieta' numeroColli.
-     *
+     * Recupera il valore della propriet numeroColli.
+     * 
      * @return
      *     possible object is
      *     {@link Integer }
-     *
+     *     
      */
     public Integer getNumeroColli() {
         return numeroColli;
     }
 
     /**
-     * Imposta il valore della proprieta' numeroColli.
-     *
+     * Imposta il valore della propriet numeroColli.
+     * 
      * @param value
      *     allowed object is
      *     {@link Integer }
-     *
+     *     
      */
     public void setNumeroColli(Integer value) {
         this.numeroColli = value;
     }
 
     /**
-     * Recupera il valore della proprieta' descrizione.
-     *
+     * Recupera il valore della propriet descrizione.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getDescrizione() {
         return descrizione;
     }
 
     /**
-     * Imposta il valore della proprieta' descrizione.
-     *
+     * Imposta il valore della propriet descrizione.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setDescrizione(String value) {
         this.descrizione = value;
     }
 
     /**
-     * Recupera il valore della proprieta' unitaMisuraPeso.
-     *
+     * Recupera il valore della propriet unitaMisuraPeso.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getUnitaMisuraPeso() {
         return unitaMisuraPeso;
     }
 
     /**
-     * Imposta il valore della proprieta' unitaMisuraPeso.
-     *
+     * Imposta il valore della propriet unitaMisuraPeso.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setUnitaMisuraPeso(String value) {
         this.unitaMisuraPeso = value;
     }
 
     /**
-     * Recupera il valore della proprieta' pesoLordo.
-     *
+     * Recupera il valore della propriet pesoLordo.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getPesoLordo() {
         return pesoLordo;
     }
 
     /**
-     * Imposta il valore della proprieta' pesoLordo.
-     *
+     * Imposta il valore della propriet pesoLordo.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setPesoLordo(BigDecimal value) {
         this.pesoLordo = value;
     }
 
     /**
-     * Recupera il valore della proprieta' pesoNetto.
-     *
+     * Recupera il valore della propriet pesoNetto.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getPesoNetto() {
         return pesoNetto;
     }
 
     /**
-     * Imposta il valore della proprieta' pesoNetto.
-     *
+     * Imposta il valore della propriet pesoNetto.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setPesoNetto(BigDecimal value) {
         this.pesoNetto = value;
     }
 
     /**
-     * Recupera il valore della proprieta' dataOraRitiro.
-     *
+     * Recupera il valore della propriet dataOraRitiro.
+     * 
      * @return
      *     possible object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public XMLGregorianCalendar getDataOraRitiro() {
         return dataOraRitiro;
     }
 
     /**
-     * Imposta il valore della proprieta' dataOraRitiro.
-     *
+     * Imposta il valore della propriet dataOraRitiro.
+     * 
      * @param value
      *     allowed object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public void setDataOraRitiro(XMLGregorianCalendar value) {
         this.dataOraRitiro = value;
     }
 
     /**
-     * Recupera il valore della proprieta' dataInizioTrasporto.
-     *
+     * Recupera il valore della propriet dataInizioTrasporto.
+     * 
      * @return
      *     possible object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public XMLGregorianCalendar getDataInizioTrasporto() {
         return dataInizioTrasporto;
     }
 
     /**
-     * Imposta il valore della proprieta' dataInizioTrasporto.
-     *
+     * Imposta il valore della propriet dataInizioTrasporto.
+     * 
      * @param value
      *     allowed object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public void setDataInizioTrasporto(XMLGregorianCalendar value) {
         this.dataInizioTrasporto = value;
     }
 
     /**
-     * Recupera il valore della proprieta' tipoResa.
-     *
+     * Recupera il valore della propriet tipoResa.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getTipoResa() {
         return tipoResa;
     }
 
     /**
-     * Imposta il valore della proprieta' tipoResa.
-     *
+     * Imposta il valore della propriet tipoResa.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setTipoResa(String value) {
         this.tipoResa = value;
     }
 
     /**
-     * Recupera il valore della proprieta' indirizzoResa.
-     *
+     * Recupera il valore della propriet indirizzoResa.
+     * 
      * @return
      *     possible object is
      *     {@link IndirizzoType }
-     *
+     *     
      */
     public IndirizzoType getIndirizzoResa() {
         return indirizzoResa;
     }
 
     /**
-     * Imposta il valore della proprieta' indirizzoResa.
-     *
+     * Imposta il valore della propriet indirizzoResa.
+     * 
      * @param value
      *     allowed object is
      *     {@link IndirizzoType }
-     *
+     *     
      */
     public void setIndirizzoResa(IndirizzoType value) {
         this.indirizzoResa = value;
     }
 
     /**
-     * Recupera il valore della proprieta' dataOraConsegna.
-     *
+     * Recupera il valore della propriet dataOraConsegna.
+     * 
      * @return
      *     possible object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public XMLGregorianCalendar getDataOraConsegna() {
         return dataOraConsegna;
     }
 
     /**
-     * Imposta il valore della proprieta' dataOraConsegna.
-     *
+     * Imposta il valore della propriet dataOraConsegna.
+     * 
      * @param value
      *     allowed object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public void setDataOraConsegna(XMLGregorianCalendar value) {
         this.dataOraConsegna = value;

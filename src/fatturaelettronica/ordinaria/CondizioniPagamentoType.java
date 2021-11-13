@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:21 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:27:08 PM CET 
 //
 
 
@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Classe Java per CondizioniPagamentoType.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
  * <p>
  * <pre>
@@ -29,7 +29,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
- *
+ * 
  */
 @XmlType(name = "CondizioniPagamentoType")
 @XmlEnum
@@ -38,21 +38,21 @@ public enum CondizioniPagamentoType {
 
     /**
      * pagamento a rate
-     *
+     * 
      */
     @XmlEnumValue("TP01")
     TP_01("TP01"),
 
     /**
      * pagamento completo
-     *
+     * 
      */
     @XmlEnumValue("TP02")
     TP_02("TP02"),
 
     /**
      * anticipo
-     *
+     * 
      */
     @XmlEnumValue("TP03")
     TP_03("TP03");

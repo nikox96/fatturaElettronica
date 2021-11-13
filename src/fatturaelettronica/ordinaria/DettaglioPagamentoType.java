@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:21 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:27:08 PM CET 
 //
 
 
@@ -21,9 +21,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 /**
  * <p>Classe Java per DettaglioPagamentoType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="DettaglioPagamentoType">
  *   &lt;complexContent>
@@ -55,8 +55,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DettaglioPagamentoType", propOrder = {
@@ -148,504 +148,504 @@ public class DettaglioPagamentoType {
     protected String codicePagamento;
 
     /**
-     * Recupera il valore della proprieta' beneficiario.
-     *
+     * Recupera il valore della propriet beneficiario.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getBeneficiario() {
         return beneficiario;
     }
 
     /**
-     * Imposta il valore della proprieta' beneficiario.
-     *
+     * Imposta il valore della propriet beneficiario.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setBeneficiario(String value) {
         this.beneficiario = value;
     }
 
     /**
-     * Recupera il valore della proprieta' modalitaPagamento.
-     *
+     * Recupera il valore della propriet modalitaPagamento.
+     * 
      * @return
      *     possible object is
      *     {@link ModalitaPagamentoType }
-     *
+     *     
      */
     public ModalitaPagamentoType getModalitaPagamento() {
         return modalitaPagamento;
     }
 
     /**
-     * Imposta il valore della proprieta' modalitaPagamento.
-     *
+     * Imposta il valore della propriet modalitaPagamento.
+     * 
      * @param value
      *     allowed object is
      *     {@link ModalitaPagamentoType }
-     *
+     *     
      */
     public void setModalitaPagamento(ModalitaPagamentoType value) {
         this.modalitaPagamento = value;
     }
 
     /**
-     * Recupera il valore della proprieta' dataRiferimentoTerminiPagamento.
-     *
+     * Recupera il valore della propriet dataRiferimentoTerminiPagamento.
+     * 
      * @return
      *     possible object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public XMLGregorianCalendar getDataRiferimentoTerminiPagamento() {
         return dataRiferimentoTerminiPagamento;
     }
 
     /**
-     * Imposta il valore della proprieta' dataRiferimentoTerminiPagamento.
-     *
+     * Imposta il valore della propriet dataRiferimentoTerminiPagamento.
+     * 
      * @param value
      *     allowed object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public void setDataRiferimentoTerminiPagamento(XMLGregorianCalendar value) {
         this.dataRiferimentoTerminiPagamento = value;
     }
 
     /**
-     * Recupera il valore della proprieta' giorniTerminiPagamento.
-     *
+     * Recupera il valore della propriet giorniTerminiPagamento.
+     * 
      * @return
      *     possible object is
      *     {@link Integer }
-     *
+     *     
      */
     public Integer getGiorniTerminiPagamento() {
         return giorniTerminiPagamento;
     }
 
     /**
-     * Imposta il valore della proprieta' giorniTerminiPagamento.
-     *
+     * Imposta il valore della propriet giorniTerminiPagamento.
+     * 
      * @param value
      *     allowed object is
      *     {@link Integer }
-     *
+     *     
      */
     public void setGiorniTerminiPagamento(Integer value) {
         this.giorniTerminiPagamento = value;
     }
 
     /**
-     * Recupera il valore della proprieta' dataScadenzaPagamento.
-     *
+     * Recupera il valore della propriet dataScadenzaPagamento.
+     * 
      * @return
      *     possible object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public XMLGregorianCalendar getDataScadenzaPagamento() {
         return dataScadenzaPagamento;
     }
 
     /**
-     * Imposta il valore della proprieta' dataScadenzaPagamento.
-     *
+     * Imposta il valore della propriet dataScadenzaPagamento.
+     * 
      * @param value
      *     allowed object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public void setDataScadenzaPagamento(XMLGregorianCalendar value) {
         this.dataScadenzaPagamento = value;
     }
 
     /**
-     * Recupera il valore della proprieta' importoPagamento.
-     *
+     * Recupera il valore della propriet importoPagamento.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getImportoPagamento() {
         return importoPagamento;
     }
 
     /**
-     * Imposta il valore della proprieta' importoPagamento.
-     *
+     * Imposta il valore della propriet importoPagamento.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setImportoPagamento(BigDecimal value) {
         this.importoPagamento = value;
     }
 
     /**
-     * Recupera il valore della proprieta' codUfficioPostale.
-     *
+     * Recupera il valore della propriet codUfficioPostale.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getCodUfficioPostale() {
         return codUfficioPostale;
     }
 
     /**
-     * Imposta il valore della proprieta' codUfficioPostale.
-     *
+     * Imposta il valore della propriet codUfficioPostale.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setCodUfficioPostale(String value) {
         this.codUfficioPostale = value;
     }
 
     /**
-     * Recupera il valore della proprieta' cognomeQuietanzante.
-     *
+     * Recupera il valore della propriet cognomeQuietanzante.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getCognomeQuietanzante() {
         return cognomeQuietanzante;
     }
 
     /**
-     * Imposta il valore della proprieta' cognomeQuietanzante.
-     *
+     * Imposta il valore della propriet cognomeQuietanzante.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setCognomeQuietanzante(String value) {
         this.cognomeQuietanzante = value;
     }
 
     /**
-     * Recupera il valore della proprieta' nomeQuietanzante.
-     *
+     * Recupera il valore della propriet nomeQuietanzante.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getNomeQuietanzante() {
         return nomeQuietanzante;
     }
 
     /**
-     * Imposta il valore della proprieta' nomeQuietanzante.
-     *
+     * Imposta il valore della propriet nomeQuietanzante.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setNomeQuietanzante(String value) {
         this.nomeQuietanzante = value;
     }
 
     /**
-     * Recupera il valore della proprieta' cfQuietanzante.
-     *
+     * Recupera il valore della propriet cfQuietanzante.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getCFQuietanzante() {
         return cfQuietanzante;
     }
 
     /**
-     * Imposta il valore della proprieta' cfQuietanzante.
-     *
+     * Imposta il valore della propriet cfQuietanzante.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setCFQuietanzante(String value) {
         this.cfQuietanzante = value;
     }
 
     /**
-     * Recupera il valore della proprieta' titoloQuietanzante.
-     *
+     * Recupera il valore della propriet titoloQuietanzante.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getTitoloQuietanzante() {
         return titoloQuietanzante;
     }
 
     /**
-     * Imposta il valore della proprieta' titoloQuietanzante.
-     *
+     * Imposta il valore della propriet titoloQuietanzante.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setTitoloQuietanzante(String value) {
         this.titoloQuietanzante = value;
     }
 
     /**
-     * Recupera il valore della proprieta' istitutoFinanziario.
-     *
+     * Recupera il valore della propriet istitutoFinanziario.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getIstitutoFinanziario() {
         return istitutoFinanziario;
     }
 
     /**
-     * Imposta il valore della proprieta' istitutoFinanziario.
-     *
+     * Imposta il valore della propriet istitutoFinanziario.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setIstitutoFinanziario(String value) {
         this.istitutoFinanziario = value;
     }
 
     /**
-     * Recupera il valore della proprieta' iban.
-     *
+     * Recupera il valore della propriet iban.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getIBAN() {
         return iban;
     }
 
     /**
-     * Imposta il valore della proprieta' iban.
-     *
+     * Imposta il valore della propriet iban.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setIBAN(String value) {
         this.iban = value;
     }
 
     /**
-     * Recupera il valore della proprieta' abi.
-     *
+     * Recupera il valore della propriet abi.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getABI() {
         return abi;
     }
 
     /**
-     * Imposta il valore della proprieta' abi.
-     *
+     * Imposta il valore della propriet abi.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setABI(String value) {
         this.abi = value;
     }
 
     /**
-     * Recupera il valore della proprieta' cab.
-     *
+     * Recupera il valore della propriet cab.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getCAB() {
         return cab;
     }
 
     /**
-     * Imposta il valore della proprieta' cab.
-     *
+     * Imposta il valore della propriet cab.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setCAB(String value) {
         this.cab = value;
     }
 
     /**
-     * Recupera il valore della proprieta' bic.
-     *
+     * Recupera il valore della propriet bic.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getBIC() {
         return bic;
     }
 
     /**
-     * Imposta il valore della proprieta' bic.
-     *
+     * Imposta il valore della propriet bic.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setBIC(String value) {
         this.bic = value;
     }
 
     /**
-     * Recupera il valore della proprieta' scontoPagamentoAnticipato.
-     *
+     * Recupera il valore della propriet scontoPagamentoAnticipato.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getScontoPagamentoAnticipato() {
         return scontoPagamentoAnticipato;
     }
 
     /**
-     * Imposta il valore della proprieta' scontoPagamentoAnticipato.
-     *
+     * Imposta il valore della propriet scontoPagamentoAnticipato.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setScontoPagamentoAnticipato(BigDecimal value) {
         this.scontoPagamentoAnticipato = value;
     }
 
     /**
-     * Recupera il valore della proprieta' dataLimitePagamentoAnticipato.
-     *
+     * Recupera il valore della propriet dataLimitePagamentoAnticipato.
+     * 
      * @return
      *     possible object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public XMLGregorianCalendar getDataLimitePagamentoAnticipato() {
         return dataLimitePagamentoAnticipato;
     }
 
     /**
-     * Imposta il valore della proprieta' dataLimitePagamentoAnticipato.
-     *
+     * Imposta il valore della propriet dataLimitePagamentoAnticipato.
+     * 
      * @param value
      *     allowed object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public void setDataLimitePagamentoAnticipato(XMLGregorianCalendar value) {
         this.dataLimitePagamentoAnticipato = value;
     }
 
     /**
-     * Recupera il valore della proprieta' penalitaPagamentiRitardati.
-     *
+     * Recupera il valore della propriet penalitaPagamentiRitardati.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getPenalitaPagamentiRitardati() {
         return penalitaPagamentiRitardati;
     }
 
     /**
-     * Imposta il valore della proprieta' penalitaPagamentiRitardati.
-     *
+     * Imposta il valore della propriet penalitaPagamentiRitardati.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setPenalitaPagamentiRitardati(BigDecimal value) {
         this.penalitaPagamentiRitardati = value;
     }
 
     /**
-     * Recupera il valore della proprieta' dataDecorrenzaPenale.
-     *
+     * Recupera il valore della propriet dataDecorrenzaPenale.
+     * 
      * @return
      *     possible object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public XMLGregorianCalendar getDataDecorrenzaPenale() {
         return dataDecorrenzaPenale;
     }
 
     /**
-     * Imposta il valore della proprieta' dataDecorrenzaPenale.
-     *
+     * Imposta il valore della propriet dataDecorrenzaPenale.
+     * 
      * @param value
      *     allowed object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public void setDataDecorrenzaPenale(XMLGregorianCalendar value) {
         this.dataDecorrenzaPenale = value;
     }
 
     /**
-     * Recupera il valore della proprieta' codicePagamento.
-     *
+     * Recupera il valore della propriet codicePagamento.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getCodicePagamento() {
         return codicePagamento;
     }
 
     /**
-     * Imposta il valore della proprieta' codicePagamento.
-     *
+     * Imposta il valore della propriet codicePagamento.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setCodicePagamento(String value) {
         this.codicePagamento = value;

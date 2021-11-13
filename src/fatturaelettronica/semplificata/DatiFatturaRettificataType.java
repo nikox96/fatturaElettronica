@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:50 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:28:06 PM CET 
 //
 
 
@@ -20,9 +20,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 /**
  * <p>Classe Java per DatiFatturaRettificataType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="DatiFatturaRettificataType">
  *   &lt;complexContent>
@@ -36,8 +36,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DatiFatturaRettificataType", namespace = "http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.0", propOrder = {
@@ -60,72 +60,72 @@ public class DatiFatturaRettificataType {
     protected String elementiRettificati;
 
     /**
-     * Recupera il valore della proprieta' numeroFR.
-     *
+     * Recupera il valore della propriet numeroFR.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getNumeroFR() {
         return numeroFR;
     }
 
     /**
-     * Imposta il valore della proprieta' numeroFR.
-     *
+     * Imposta il valore della propriet numeroFR.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setNumeroFR(String value) {
         this.numeroFR = value;
     }
 
     /**
-     * Recupera il valore della proprieta' dataFR.
-     *
+     * Recupera il valore della propriet dataFR.
+     * 
      * @return
      *     possible object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public XMLGregorianCalendar getDataFR() {
         return dataFR;
     }
 
     /**
-     * Imposta il valore della proprieta' dataFR.
-     *
+     * Imposta il valore della propriet dataFR.
+     * 
      * @param value
      *     allowed object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public void setDataFR(XMLGregorianCalendar value) {
         this.dataFR = value;
     }
 
     /**
-     * Recupera il valore della proprieta' elementiRettificati.
-     *
+     * Recupera il valore della propriet elementiRettificati.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getElementiRettificati() {
         return elementiRettificati;
     }
 
     /**
-     * Imposta il valore della proprieta' elementiRettificati.
-     *
+     * Imposta il valore della propriet elementiRettificati.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setElementiRettificati(String value) {
         this.elementiRettificati = value;

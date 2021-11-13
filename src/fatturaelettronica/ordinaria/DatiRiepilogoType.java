@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:21 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:27:08 PM CET 
 //
 
 
@@ -20,9 +20,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 /**
  * <p>Classe Java per DatiRiepilogoType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="DatiRiepilogoType">
  *   &lt;complexContent>
@@ -41,8 +41,8 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DatiRiepilogoType", propOrder = {
@@ -79,192 +79,192 @@ public class DatiRiepilogoType {
     protected String riferimentoNormativo;
 
     /**
-     * Recupera il valore della proprieta' aliquotaIVA.
-     *
+     * Recupera il valore della propriet aliquotaIVA.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getAliquotaIVA() {
         return aliquotaIVA;
     }
 
     /**
-     * Imposta il valore della proprieta' aliquotaIVA.
-     *
+     * Imposta il valore della propriet aliquotaIVA.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setAliquotaIVA(BigDecimal value) {
         this.aliquotaIVA = value;
     }
 
     /**
-     * Recupera il valore della proprieta' natura.
-     *
+     * Recupera il valore della propriet natura.
+     * 
      * @return
      *     possible object is
      *     {@link NaturaType }
-     *
+     *     
      */
     public NaturaType getNatura() {
         return natura;
     }
 
     /**
-     * Imposta il valore della proprieta' natura.
-     *
+     * Imposta il valore della propriet natura.
+     * 
      * @param value
      *     allowed object is
      *     {@link NaturaType }
-     *
+     *     
      */
     public void setNatura(NaturaType value) {
         this.natura = value;
     }
 
     /**
-     * Recupera il valore della proprieta' speseAccessorie.
-     *
+     * Recupera il valore della propriet speseAccessorie.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getSpeseAccessorie() {
         return speseAccessorie;
     }
 
     /**
-     * Imposta il valore della proprieta' speseAccessorie.
-     *
+     * Imposta il valore della propriet speseAccessorie.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setSpeseAccessorie(BigDecimal value) {
         this.speseAccessorie = value;
     }
 
     /**
-     * Recupera il valore della proprieta' arrotondamento.
-     *
+     * Recupera il valore della propriet arrotondamento.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getArrotondamento() {
         return arrotondamento;
     }
 
     /**
-     * Imposta il valore della proprieta' arrotondamento.
-     *
+     * Imposta il valore della propriet arrotondamento.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setArrotondamento(BigDecimal value) {
         this.arrotondamento = value;
     }
 
     /**
-     * Recupera il valore della proprieta' imponibileImporto.
-     *
+     * Recupera il valore della propriet imponibileImporto.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getImponibileImporto() {
         return imponibileImporto;
     }
 
     /**
-     * Imposta il valore della proprieta' imponibileImporto.
-     *
+     * Imposta il valore della propriet imponibileImporto.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setImponibileImporto(BigDecimal value) {
         this.imponibileImporto = value;
     }
 
     /**
-     * Recupera il valore della proprieta' imposta.
-     *
+     * Recupera il valore della propriet imposta.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getImposta() {
         return imposta;
     }
 
     /**
-     * Imposta il valore della proprieta' imposta.
-     *
+     * Imposta il valore della propriet imposta.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setImposta(BigDecimal value) {
         this.imposta = value;
     }
 
     /**
-     * Recupera il valore della proprieta' esigibilitaIVA.
-     *
+     * Recupera il valore della propriet esigibilitaIVA.
+     * 
      * @return
      *     possible object is
      *     {@link EsigibilitaIVAType }
-     *
+     *     
      */
     public EsigibilitaIVAType getEsigibilitaIVA() {
         return esigibilitaIVA;
     }
 
     /**
-     * Imposta il valore della proprieta' esigibilitaIVA.
-     *
+     * Imposta il valore della propriet esigibilitaIVA.
+     * 
      * @param value
      *     allowed object is
      *     {@link EsigibilitaIVAType }
-     *
+     *     
      */
     public void setEsigibilitaIVA(EsigibilitaIVAType value) {
         this.esigibilitaIVA = value;
     }
 
     /**
-     * Recupera il valore della proprieta' riferimentoNormativo.
-     *
+     * Recupera il valore della propriet riferimentoNormativo.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getRiferimentoNormativo() {
         return riferimentoNormativo;
     }
 
     /**
-     * Imposta il valore della proprieta' riferimentoNormativo.
-     *
+     * Imposta il valore della propriet riferimentoNormativo.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setRiferimentoNormativo(String value) {
         this.riferimentoNormativo = value;

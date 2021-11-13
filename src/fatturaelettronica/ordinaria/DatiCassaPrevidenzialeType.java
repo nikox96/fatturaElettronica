@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:21 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:27:08 PM CET 
 //
 
 
@@ -20,9 +20,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 /**
  * <p>Classe Java per DatiCassaPrevidenzialeType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="DatiCassaPrevidenzialeType">
  *   &lt;complexContent>
@@ -41,8 +41,8 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DatiCassaPrevidenzialeType", propOrder = {
@@ -80,192 +80,192 @@ public class DatiCassaPrevidenzialeType {
     protected String riferimentoAmministrazione;
 
     /**
-     * Recupera il valore della proprieta' tipoCassa.
-     *
+     * Recupera il valore della propriet tipoCassa.
+     * 
      * @return
      *     possible object is
      *     {@link TipoCassaType }
-     *
+     *     
      */
     public TipoCassaType getTipoCassa() {
         return tipoCassa;
     }
 
     /**
-     * Imposta il valore della proprieta' tipoCassa.
-     *
+     * Imposta il valore della propriet tipoCassa.
+     * 
      * @param value
      *     allowed object is
      *     {@link TipoCassaType }
-     *
+     *     
      */
     public void setTipoCassa(TipoCassaType value) {
         this.tipoCassa = value;
     }
 
     /**
-     * Recupera il valore della proprieta' alCassa.
-     *
+     * Recupera il valore della propriet alCassa.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getAlCassa() {
         return alCassa;
     }
 
     /**
-     * Imposta il valore della proprieta' alCassa.
-     *
+     * Imposta il valore della propriet alCassa.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setAlCassa(BigDecimal value) {
         this.alCassa = value;
     }
 
     /**
-     * Recupera il valore della proprieta' importoContributoCassa.
-     *
+     * Recupera il valore della propriet importoContributoCassa.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getImportoContributoCassa() {
         return importoContributoCassa;
     }
 
     /**
-     * Imposta il valore della proprieta' importoContributoCassa.
-     *
+     * Imposta il valore della propriet importoContributoCassa.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setImportoContributoCassa(BigDecimal value) {
         this.importoContributoCassa = value;
     }
 
     /**
-     * Recupera il valore della proprieta' imponibileCassa.
-     *
+     * Recupera il valore della propriet imponibileCassa.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getImponibileCassa() {
         return imponibileCassa;
     }
 
     /**
-     * Imposta il valore della proprieta' imponibileCassa.
-     *
+     * Imposta il valore della propriet imponibileCassa.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setImponibileCassa(BigDecimal value) {
         this.imponibileCassa = value;
     }
 
     /**
-     * Recupera il valore della proprieta' aliquotaIVA.
-     *
+     * Recupera il valore della propriet aliquotaIVA.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getAliquotaIVA() {
         return aliquotaIVA;
     }
 
     /**
-     * Imposta il valore della proprieta' aliquotaIVA.
-     *
+     * Imposta il valore della propriet aliquotaIVA.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setAliquotaIVA(BigDecimal value) {
         this.aliquotaIVA = value;
     }
 
     /**
-     * Recupera il valore della proprieta' ritenuta.
-     *
+     * Recupera il valore della propriet ritenuta.
+     * 
      * @return
      *     possible object is
      *     {@link RitenutaType }
-     *
+     *     
      */
     public RitenutaType getRitenuta() {
         return ritenuta;
     }
 
     /**
-     * Imposta il valore della proprieta' ritenuta.
-     *
+     * Imposta il valore della propriet ritenuta.
+     * 
      * @param value
      *     allowed object is
      *     {@link RitenutaType }
-     *
+     *     
      */
     public void setRitenuta(RitenutaType value) {
         this.ritenuta = value;
     }
 
     /**
-     * Recupera il valore della proprieta' natura.
-     *
+     * Recupera il valore della propriet natura.
+     * 
      * @return
      *     possible object is
      *     {@link NaturaType }
-     *
+     *     
      */
     public NaturaType getNatura() {
         return natura;
     }
 
     /**
-     * Imposta il valore della proprieta' natura.
-     *
+     * Imposta il valore della propriet natura.
+     * 
      * @param value
      *     allowed object is
      *     {@link NaturaType }
-     *
+     *     
      */
     public void setNatura(NaturaType value) {
         this.natura = value;
     }
 
     /**
-     * Recupera il valore della proprieta' riferimentoAmministrazione.
-     *
+     * Recupera il valore della propriet riferimentoAmministrazione.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getRiferimentoAmministrazione() {
         return riferimentoAmministrazione;
     }
 
     /**
-     * Imposta il valore della proprieta' riferimentoAmministrazione.
-     *
+     * Imposta il valore della propriet riferimentoAmministrazione.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setRiferimentoAmministrazione(String value) {
         this.riferimentoAmministrazione = value;

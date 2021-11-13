@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:21 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:27:08 PM CET 
 //
 
 
@@ -17,14 +17,14 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- *
- *        Blocco relativo ai Dati Generali della Fattura Elettronica
- *
- *
+ * 
+ * 				Blocco relativo ai Dati Generali della Fattura Elettronica
+ * 			
+ * 
  * <p>Classe Java per DatiGeneraliType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="DatiGeneraliType">
  *   &lt;complexContent>
@@ -45,8 +45,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DatiGeneraliType", propOrder = {
@@ -85,24 +85,24 @@ public class DatiGeneraliType {
     protected FatturaPrincipaleType fatturaPrincipale;
 
     /**
-     * Recupera il valore della proprieta' datiGeneraliDocumento.
-     *
+     * Recupera il valore della propriet datiGeneraliDocumento.
+     * 
      * @return
      *     possible object is
      *     {@link DatiGeneraliDocumentoType }
-     *
+     *     
      */
     public DatiGeneraliDocumentoType getDatiGeneraliDocumento() {
         return datiGeneraliDocumento;
     }
 
     /**
-     * Imposta il valore della proprieta' datiGeneraliDocumento.
-     *
+     * Imposta il valore della propriet datiGeneraliDocumento.
+     * 
      * @param value
      *     allowed object is
      *     {@link DatiGeneraliDocumentoType }
-     *
+     *     
      */
     public void setDatiGeneraliDocumento(DatiGeneraliDocumentoType value) {
         this.datiGeneraliDocumento = value;
@@ -110,25 +110,25 @@ public class DatiGeneraliType {
 
     /**
      * Gets the value of the datiOrdineAcquisto property.
-     *
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the datiOrdineAcquisto property.
-     *
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getDatiOrdineAcquisto().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link DatiDocumentiCorrelatiType }
-     *
-     *
+     * 
+     * 
      */
     public List<DatiDocumentiCorrelatiType> getDatiOrdineAcquisto() {
         if (datiOrdineAcquisto == null) {
@@ -139,25 +139,25 @@ public class DatiGeneraliType {
 
     /**
      * Gets the value of the datiContratto property.
-     *
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the datiContratto property.
-     *
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getDatiContratto().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link DatiDocumentiCorrelatiType }
-     *
-     *
+     * 
+     * 
      */
     public List<DatiDocumentiCorrelatiType> getDatiContratto() {
         if (datiContratto == null) {
@@ -168,25 +168,25 @@ public class DatiGeneraliType {
 
     /**
      * Gets the value of the datiConvenzione property.
-     *
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the datiConvenzione property.
-     *
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getDatiConvenzione().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link DatiDocumentiCorrelatiType }
-     *
-     *
+     * 
+     * 
      */
     public List<DatiDocumentiCorrelatiType> getDatiConvenzione() {
         if (datiConvenzione == null) {
@@ -197,25 +197,25 @@ public class DatiGeneraliType {
 
     /**
      * Gets the value of the datiRicezione property.
-     *
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the datiRicezione property.
-     *
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getDatiRicezione().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link DatiDocumentiCorrelatiType }
-     *
-     *
+     * 
+     * 
      */
     public List<DatiDocumentiCorrelatiType> getDatiRicezione() {
         if (datiRicezione == null) {
@@ -226,25 +226,25 @@ public class DatiGeneraliType {
 
     /**
      * Gets the value of the datiFattureCollegate property.
-     *
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the datiFattureCollegate property.
-     *
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getDatiFattureCollegate().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link DatiDocumentiCorrelatiType }
-     *
-     *
+     * 
+     * 
      */
     public List<DatiDocumentiCorrelatiType> getDatiFattureCollegate() {
         if (datiFattureCollegate == null) {
@@ -255,25 +255,25 @@ public class DatiGeneraliType {
 
     /**
      * Gets the value of the datiSAL property.
-     *
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the datiSAL property.
-     *
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getDatiSAL().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link DatiSALType }
-     *
-     *
+     * 
+     * 
      */
     public List<DatiSALType> getDatiSAL() {
         if (datiSAL == null) {
@@ -284,25 +284,25 @@ public class DatiGeneraliType {
 
     /**
      * Gets the value of the datiDDT property.
-     *
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the datiDDT property.
-     *
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getDatiDDT().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link DatiDDTType }
-     *
-     *
+     * 
+     * 
      */
     public List<DatiDDTType> getDatiDDT() {
         if (datiDDT == null) {
@@ -312,48 +312,48 @@ public class DatiGeneraliType {
     }
 
     /**
-     * Recupera il valore della proprieta' datiTrasporto.
-     *
+     * Recupera il valore della propriet datiTrasporto.
+     * 
      * @return
      *     possible object is
      *     {@link DatiTrasportoType }
-     *
+     *     
      */
     public DatiTrasportoType getDatiTrasporto() {
         return datiTrasporto;
     }
 
     /**
-     * Imposta il valore della proprieta' datiTrasporto.
-     *
+     * Imposta il valore della propriet datiTrasporto.
+     * 
      * @param value
      *     allowed object is
      *     {@link DatiTrasportoType }
-     *
+     *     
      */
     public void setDatiTrasporto(DatiTrasportoType value) {
         this.datiTrasporto = value;
     }
 
     /**
-     * Recupera il valore della proprieta' fatturaPrincipale.
-     *
+     * Recupera il valore della propriet fatturaPrincipale.
+     * 
      * @return
      *     possible object is
      *     {@link FatturaPrincipaleType }
-     *
+     *     
      */
     public FatturaPrincipaleType getFatturaPrincipale() {
         return fatturaPrincipale;
     }
 
     /**
-     * Imposta il valore della proprieta' fatturaPrincipale.
-     *
+     * Imposta il valore della propriet fatturaPrincipale.
+     * 
      * @param value
      *     allowed object is
      *     {@link FatturaPrincipaleType }
-     *
+     *     
      */
     public void setFatturaPrincipale(FatturaPrincipaleType value) {
         this.fatturaPrincipale = value;

@@ -1171,6 +1171,9 @@ public class FatturaElettronica {
                 case "2.5.5":
                     //fattBodyAllegato.setAttachment(IOUtils Apache);
                     break;
+                default:
+                    bwe.write(SIMPLE_DATE_FORMAT.format(date) + " ERROR > livello " + index[0] + " non gestito\n");
+                    break;
             }
             lvlPrev = lvlCur;
         }
@@ -1411,7 +1414,9 @@ public class FatturaElettronica {
         if (cedAna.getAnagrafica() != null || cedAna.getIdFiscaleIVA() != null || (cedAna.getCodiceFiscale() != null && !"".equals(cedAna.getCodiceFiscale()))) {
             ced.setDatiAnagrafici(cedAna);
         }
-        ced.setIscrizioneREA(cedRea);
+        if (!(cedRea.getUfficio() == null || "".equals(cedRea.getUfficio()))){
+            ced.setIscrizioneREA(cedRea);
+        }
         if (!("".equals(cedSede.getIndirizzo()) || cedSede.getIndirizzo() == null)) {
             ced.setSede(cedSede);
         }

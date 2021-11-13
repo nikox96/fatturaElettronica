@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:21 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:27:08 PM CET 
 //
 
 
@@ -22,9 +22,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 /**
  * <p>Classe Java per FatturaElettronicaType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="FatturaElettronicaType">
  *   &lt;complexContent>
@@ -40,8 +40,8 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "FatturaElettronicaType", propOrder = {
@@ -65,24 +65,24 @@ public class FatturaElettronicaType {
     protected String sistemaEmittente;
 
     /**
-     * Recupera il valore della proprieta' fatturaElettronicaHeader.
-     *
+     * Recupera il valore della propriet fatturaElettronicaHeader.
+     * 
      * @return
      *     possible object is
      *     {@link FatturaElettronicaHeaderType }
-     *
+     *     
      */
     public FatturaElettronicaHeaderType getFatturaElettronicaHeader() {
         return fatturaElettronicaHeader;
     }
 
     /**
-     * Imposta il valore della proprieta' fatturaElettronicaHeader.
-     *
+     * Imposta il valore della propriet fatturaElettronicaHeader.
+     * 
      * @param value
      *     allowed object is
      *     {@link FatturaElettronicaHeaderType }
-     *
+     *     
      */
     public void setFatturaElettronicaHeader(FatturaElettronicaHeaderType value) {
         this.fatturaElettronicaHeader = value;
@@ -90,25 +90,25 @@ public class FatturaElettronicaType {
 
     /**
      * Gets the value of the fatturaElettronicaBody property.
-     *
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the fatturaElettronicaBody property.
-     *
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getFatturaElettronicaBody().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link FatturaElettronicaBodyType }
-     *
-     *
+     * 
+     * 
      */
     public List<FatturaElettronicaBodyType> getFatturaElettronicaBody() {
         if (fatturaElettronicaBody == null) {
@@ -118,72 +118,72 @@ public class FatturaElettronicaType {
     }
 
     /**
-     * Recupera il valore della proprieta' signature.
-     *
+     * Recupera il valore della propriet signature.
+     * 
      * @return
      *     possible object is
      *     {@link SignatureType }
-     *
+     *     
      */
     public SignatureType getSignature() {
         return signature;
     }
 
     /**
-     * Imposta il valore della proprieta' signature.
-     *
+     * Imposta il valore della propriet signature.
+     * 
      * @param value
      *     allowed object is
      *     {@link SignatureType }
-     *
+     *     
      */
     public void setSignature(SignatureType value) {
         this.signature = value;
     }
 
     /**
-     * Recupera il valore della proprieta' versione.
-     *
+     * Recupera il valore della propriet versione.
+     * 
      * @return
      *     possible object is
      *     {@link FormatoTrasmissioneType }
-     *
+     *     
      */
     public FormatoTrasmissioneType getVersione() {
         return versione;
     }
 
     /**
-     * Imposta il valore della proprieta' versione.
-     *
+     * Imposta il valore della propriet versione.
+     * 
      * @param value
      *     allowed object is
      *     {@link FormatoTrasmissioneType }
-     *
+     *     
      */
     public void setVersione(FormatoTrasmissioneType value) {
         this.versione = value;
     }
 
     /**
-     * Recupera il valore della proprieta' sistemaEmittente.
-     *
+     * Recupera il valore della propriet sistemaEmittente.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getSistemaEmittente() {
         return sistemaEmittente;
     }
 
     /**
-     * Imposta il valore della proprieta' sistemaEmittente.
-     *
+     * Imposta il valore della propriet sistemaEmittente.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setSistemaEmittente(String value) {
         this.sistemaEmittente = value;

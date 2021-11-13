@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:21 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:27:08 PM CET 
 //
 
 
@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Classe Java per ModalitaPagamentoType.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
  * <p>
  * <pre>
@@ -48,7 +48,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
- *
+ * 
  */
 @XmlType(name = "ModalitaPagamentoType")
 @XmlEnum
@@ -57,161 +57,161 @@ public enum ModalitaPagamentoType {
 
     /**
      * contanti
-     *
+     * 
      */
     @XmlEnumValue("MP01")
     MP_01("MP01"),
 
     /**
      * assegno
-     *
+     * 
      */
     @XmlEnumValue("MP02")
     MP_02("MP02"),
 
     /**
      * assegno circolare
-     *
+     * 
      */
     @XmlEnumValue("MP03")
     MP_03("MP03"),
 
     /**
      * contanti presso Tesoreria
-     *
+     * 
      */
     @XmlEnumValue("MP04")
     MP_04("MP04"),
 
     /**
      * bonifico
-     *
+     * 
      */
     @XmlEnumValue("MP05")
     MP_05("MP05"),
 
     /**
      * vaglia cambiario
-     *
+     * 
      */
     @XmlEnumValue("MP06")
     MP_06("MP06"),
 
     /**
      * bollettino bancario
-     *
+     * 
      */
     @XmlEnumValue("MP07")
     MP_07("MP07"),
 
     /**
      * carta di pagamento
-     *
+     * 
      */
     @XmlEnumValue("MP08")
     MP_08("MP08"),
 
     /**
      * RID
-     *
+     * 
      */
     @XmlEnumValue("MP09")
     MP_09("MP09"),
 
     /**
      * RID utenze
-     *
+     * 
      */
     @XmlEnumValue("MP10")
     MP_10("MP10"),
 
     /**
      * RID veloce
-     *
+     * 
      */
     @XmlEnumValue("MP11")
     MP_11("MP11"),
 
     /**
      * RIBA
-     *
+     * 
      */
     @XmlEnumValue("MP12")
     MP_12("MP12"),
 
     /**
      * MAV
-     *
+     * 
      */
     @XmlEnumValue("MP13")
     MP_13("MP13"),
 
     /**
      * quietanza erario
-     *
+     * 
      */
     @XmlEnumValue("MP14")
     MP_14("MP14"),
 
     /**
-     * giroconto su conti di contabilita' speciale
-     *
+     * giroconto su conti di contabilit speciale
+     * 
      */
     @XmlEnumValue("MP15")
     MP_15("MP15"),
 
     /**
      * domiciliazione bancaria
-     *
+     * 
      */
     @XmlEnumValue("MP16")
     MP_16("MP16"),
 
     /**
      * domiciliazione postale
-     *
+     * 
      */
     @XmlEnumValue("MP17")
     MP_17("MP17"),
 
     /**
      * bollettino di c/c postale
-     *
+     * 
      */
     @XmlEnumValue("MP18")
     MP_18("MP18"),
 
     /**
      * SEPA Direct Debit
-     *
+     * 
      */
     @XmlEnumValue("MP19")
     MP_19("MP19"),
 
     /**
      * SEPA Direct Debit CORE
-     *
+     * 
      */
     @XmlEnumValue("MP20")
     MP_20("MP20"),
 
     /**
      * SEPA Direct Debit B2B
-     *
+     * 
      */
     @XmlEnumValue("MP21")
     MP_21("MP21"),
 
     /**
-     * Trattenuta su somme gia' riscosse
-     *
+     * Trattenuta su somme gi riscosse
+     * 
      */
     @XmlEnumValue("MP22")
     MP_22("MP22"),
 
     /**
      * PagoPA
-     *
+     * 
      */
     @XmlEnumValue("MP23")
     MP_23("MP23");

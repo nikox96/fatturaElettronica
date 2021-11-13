@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:21 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:27:08 PM CET 
 //
 
 
@@ -16,9 +16,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Classe Java per DSAKeyValueType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="DSAKeyValueType">
  *   &lt;complexContent>
@@ -40,8 +40,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DSAKeyValueType", namespace = "http://www.w3.org/2000/09/xmldsig#", propOrder = {
@@ -71,8 +71,8 @@ public class DSAKeyValueType {
     protected byte[] pgenCounter;
 
     /**
-     * Recupera il valore della proprieta' p.
-     *
+     * Recupera il valore della propriet p.
+     * 
      * @return
      *     possible object is
      *     byte[]
@@ -82,8 +82,8 @@ public class DSAKeyValueType {
     }
 
     /**
-     * Imposta il valore della proprieta' p.
-     *
+     * Imposta il valore della propriet p.
+     * 
      * @param value
      *     allowed object is
      *     byte[]
@@ -93,8 +93,8 @@ public class DSAKeyValueType {
     }
 
     /**
-     * Recupera il valore della proprieta' q.
-     *
+     * Recupera il valore della propriet q.
+     * 
      * @return
      *     possible object is
      *     byte[]
@@ -104,8 +104,8 @@ public class DSAKeyValueType {
     }
 
     /**
-     * Imposta il valore della proprieta' q.
-     *
+     * Imposta il valore della propriet q.
+     * 
      * @param value
      *     allowed object is
      *     byte[]
@@ -115,8 +115,8 @@ public class DSAKeyValueType {
     }
 
     /**
-     * Recupera il valore della proprieta' g.
-     *
+     * Recupera il valore della propriet g.
+     * 
      * @return
      *     possible object is
      *     byte[]
@@ -126,8 +126,8 @@ public class DSAKeyValueType {
     }
 
     /**
-     * Imposta il valore della proprieta' g.
-     *
+     * Imposta il valore della propriet g.
+     * 
      * @param value
      *     allowed object is
      *     byte[]
@@ -137,8 +137,8 @@ public class DSAKeyValueType {
     }
 
     /**
-     * Recupera il valore della proprieta' y.
-     *
+     * Recupera il valore della propriet y.
+     * 
      * @return
      *     possible object is
      *     byte[]
@@ -148,8 +148,8 @@ public class DSAKeyValueType {
     }
 
     /**
-     * Imposta il valore della proprieta' y.
-     *
+     * Imposta il valore della propriet y.
+     * 
      * @param value
      *     allowed object is
      *     byte[]
@@ -159,8 +159,8 @@ public class DSAKeyValueType {
     }
 
     /**
-     * Recupera il valore della proprieta' j.
-     *
+     * Recupera il valore della propriet j.
+     * 
      * @return
      *     possible object is
      *     byte[]
@@ -170,8 +170,8 @@ public class DSAKeyValueType {
     }
 
     /**
-     * Imposta il valore della proprieta' j.
-     *
+     * Imposta il valore della propriet j.
+     * 
      * @param value
      *     allowed object is
      *     byte[]
@@ -181,8 +181,8 @@ public class DSAKeyValueType {
     }
 
     /**
-     * Recupera il valore della proprieta' seed.
-     *
+     * Recupera il valore della propriet seed.
+     * 
      * @return
      *     possible object is
      *     byte[]
@@ -192,8 +192,8 @@ public class DSAKeyValueType {
     }
 
     /**
-     * Imposta il valore della proprieta' seed.
-     *
+     * Imposta il valore della propriet seed.
+     * 
      * @param value
      *     allowed object is
      *     byte[]
@@ -203,8 +203,8 @@ public class DSAKeyValueType {
     }
 
     /**
-     * Recupera il valore della proprieta' pgenCounter.
-     *
+     * Recupera il valore della propriet pgenCounter.
+     * 
      * @return
      *     possible object is
      *     byte[]
@@ -214,8 +214,8 @@ public class DSAKeyValueType {
     }
 
     /**
-     * Imposta il valore della proprieta' pgenCounter.
-     *
+     * Imposta il valore della propriet pgenCounter.
+     * 
      * @param value
      *     allowed object is
      *     byte[]

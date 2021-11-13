@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:21 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:27:08 PM CET 
 //
 
 
@@ -16,9 +16,9 @@ import javax.xml.bind.annotation.XmlType;
 
 /**
  * <p>Classe Java per DatiAnagraficiTerzoIntermediarioType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="DatiAnagraficiTerzoIntermediarioType">
  *   &lt;complexContent>
@@ -32,8 +32,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DatiAnagraficiTerzoIntermediarioType", propOrder = {
@@ -51,72 +51,72 @@ public class DatiAnagraficiTerzoIntermediarioType {
     protected AnagraficaType anagrafica;
 
     /**
-     * Recupera il valore della proprieta' idFiscaleIVA.
-     *
+     * Recupera il valore della propriet idFiscaleIVA.
+     * 
      * @return
      *     possible object is
      *     {@link IdFiscaleType }
-     *
+     *     
      */
     public IdFiscaleType getIdFiscaleIVA() {
         return idFiscaleIVA;
     }
 
     /**
-     * Imposta il valore della proprieta' idFiscaleIVA.
-     *
+     * Imposta il valore della propriet idFiscaleIVA.
+     * 
      * @param value
      *     allowed object is
      *     {@link IdFiscaleType }
-     *
+     *     
      */
     public void setIdFiscaleIVA(IdFiscaleType value) {
         this.idFiscaleIVA = value;
     }
 
     /**
-     * Recupera il valore della proprieta' codiceFiscale.
-     *
+     * Recupera il valore della propriet codiceFiscale.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getCodiceFiscale() {
         return codiceFiscale;
     }
 
     /**
-     * Imposta il valore della proprieta' codiceFiscale.
-     *
+     * Imposta il valore della propriet codiceFiscale.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setCodiceFiscale(String value) {
         this.codiceFiscale = value;
     }
 
     /**
-     * Recupera il valore della proprieta' anagrafica.
-     *
+     * Recupera il valore della propriet anagrafica.
+     * 
      * @return
      *     possible object is
      *     {@link AnagraficaType }
-     *
+     *     
      */
     public AnagraficaType getAnagrafica() {
         return anagrafica;
     }
 
     /**
-     * Imposta il valore della proprieta' anagrafica.
-     *
+     * Imposta il valore della propriet anagrafica.
+     * 
      * @param value
      *     allowed object is
      *     {@link AnagraficaType }
-     *
+     *     
      */
     public void setAnagrafica(AnagraficaType value) {
         this.anagrafica = value;

@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:21 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:27:08 PM CET 
 //
 
 
@@ -18,12 +18,12 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * Il campo Denominazione e' in alternativa ai campi Nome e Cognome
- *
+ * Il campo Denominazione  in alternativa ai campi Nome e Cognome
+ * 
  * <p>Classe Java per AnagraficaType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="AnagraficaType">
  *   &lt;complexContent>
@@ -45,8 +45,8 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "AnagraficaType", propOrder = {
@@ -78,120 +78,120 @@ public class AnagraficaType {
     protected String codEORI;
 
     /**
-     * Recupera il valore della proprieta' denominazione.
-     *
+     * Recupera il valore della propriet denominazione.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getDenominazione() {
         return denominazione;
     }
 
     /**
-     * Imposta il valore della proprieta' denominazione.
-     *
+     * Imposta il valore della propriet denominazione.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setDenominazione(String value) {
         this.denominazione = value;
     }
 
     /**
-     * Recupera il valore della proprieta' nome.
-     *
+     * Recupera il valore della propriet nome.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getNome() {
         return nome;
     }
 
     /**
-     * Imposta il valore della proprieta' nome.
-     *
+     * Imposta il valore della propriet nome.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setNome(String value) {
         this.nome = value;
     }
 
     /**
-     * Recupera il valore della proprieta' cognome.
-     *
+     * Recupera il valore della propriet cognome.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getCognome() {
         return cognome;
     }
 
     /**
-     * Imposta il valore della proprieta' cognome.
-     *
+     * Imposta il valore della propriet cognome.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setCognome(String value) {
         this.cognome = value;
     }
 
     /**
-     * Recupera il valore della proprieta' titolo.
-     *
+     * Recupera il valore della propriet titolo.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getTitolo() {
         return titolo;
     }
 
     /**
-     * Imposta il valore della proprieta' titolo.
-     *
+     * Imposta il valore della propriet titolo.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setTitolo(String value) {
         this.titolo = value;
     }
 
     /**
-     * Recupera il valore della proprieta' codEORI.
-     *
+     * Recupera il valore della propriet codEORI.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getCodEORI() {
         return codEORI;
     }
 
     /**
-     * Imposta il valore della proprieta' codEORI.
-     *
+     * Imposta il valore della propriet codEORI.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setCodEORI(String value) {
         this.codEORI = value;

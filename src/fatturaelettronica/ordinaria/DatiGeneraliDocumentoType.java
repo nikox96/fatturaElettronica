@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:21 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:27:08 PM CET 
 //
 
 
@@ -23,9 +23,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 /**
  * <p>Classe Java per DatiGeneraliDocumentoType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="DatiGeneraliDocumentoType">
  *   &lt;complexContent>
@@ -48,8 +48,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "DatiGeneraliDocumentoType", propOrder = {
@@ -101,96 +101,96 @@ public class DatiGeneraliDocumentoType {
     protected Art73Type art73;
 
     /**
-     * Recupera il valore della proprieta' tipoDocumento.
-     *
+     * Recupera il valore della propriet tipoDocumento.
+     * 
      * @return
      *     possible object is
      *     {@link TipoDocumentoType }
-     *
+     *     
      */
     public TipoDocumentoType getTipoDocumento() {
         return tipoDocumento;
     }
 
     /**
-     * Imposta il valore della proprieta' tipoDocumento.
-     *
+     * Imposta il valore della propriet tipoDocumento.
+     * 
      * @param value
      *     allowed object is
      *     {@link TipoDocumentoType }
-     *
+     *     
      */
     public void setTipoDocumento(TipoDocumentoType value) {
         this.tipoDocumento = value;
     }
 
     /**
-     * Recupera il valore della proprieta' divisa.
-     *
+     * Recupera il valore della propriet divisa.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getDivisa() {
         return divisa;
     }
 
     /**
-     * Imposta il valore della proprieta' divisa.
-     *
+     * Imposta il valore della propriet divisa.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setDivisa(String value) {
         this.divisa = value;
     }
 
     /**
-     * Recupera il valore della proprieta' data.
-     *
+     * Recupera il valore della propriet data.
+     * 
      * @return
      *     possible object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public XMLGregorianCalendar getData() {
         return data;
     }
 
     /**
-     * Imposta il valore della proprieta' data.
-     *
+     * Imposta il valore della propriet data.
+     * 
      * @param value
      *     allowed object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public void setData(XMLGregorianCalendar value) {
         this.data = value;
     }
 
     /**
-     * Recupera il valore della proprieta' numero.
-     *
+     * Recupera il valore della propriet numero.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getNumero() {
         return numero;
     }
 
     /**
-     * Imposta il valore della proprieta' numero.
-     *
+     * Imposta il valore della propriet numero.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setNumero(String value) {
         this.numero = value;
@@ -198,25 +198,25 @@ public class DatiGeneraliDocumentoType {
 
     /**
      * Gets the value of the datiRitenuta property.
-     *
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the datiRitenuta property.
-     *
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getDatiRitenuta().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link DatiRitenutaType }
-     *
-     *
+     * 
+     * 
      */
     public List<DatiRitenutaType> getDatiRitenuta() {
         if (datiRitenuta == null) {
@@ -226,24 +226,24 @@ public class DatiGeneraliDocumentoType {
     }
 
     /**
-     * Recupera il valore della proprieta' datiBollo.
-     *
+     * Recupera il valore della propriet datiBollo.
+     * 
      * @return
      *     possible object is
      *     {@link DatiBolloType }
-     *
+     *     
      */
     public DatiBolloType getDatiBollo() {
         return datiBollo;
     }
 
     /**
-     * Imposta il valore della proprieta' datiBollo.
-     *
+     * Imposta il valore della propriet datiBollo.
+     * 
      * @param value
      *     allowed object is
      *     {@link DatiBolloType }
-     *
+     *     
      */
     public void setDatiBollo(DatiBolloType value) {
         this.datiBollo = value;
@@ -251,25 +251,25 @@ public class DatiGeneraliDocumentoType {
 
     /**
      * Gets the value of the datiCassaPrevidenziale property.
-     *
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the datiCassaPrevidenziale property.
-     *
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getDatiCassaPrevidenziale().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link DatiCassaPrevidenzialeType }
-     *
-     *
+     * 
+     * 
      */
     public List<DatiCassaPrevidenzialeType> getDatiCassaPrevidenziale() {
         if (datiCassaPrevidenziale == null) {
@@ -280,25 +280,25 @@ public class DatiGeneraliDocumentoType {
 
     /**
      * Gets the value of the scontoMaggiorazione property.
-     *
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the scontoMaggiorazione property.
-     *
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getScontoMaggiorazione().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link ScontoMaggiorazioneType }
-     *
-     *
+     * 
+     * 
      */
     public List<ScontoMaggiorazioneType> getScontoMaggiorazione() {
         if (scontoMaggiorazione == null) {
@@ -308,48 +308,48 @@ public class DatiGeneraliDocumentoType {
     }
 
     /**
-     * Recupera il valore della proprieta' importoTotaleDocumento.
-     *
+     * Recupera il valore della propriet importoTotaleDocumento.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getImportoTotaleDocumento() {
         return importoTotaleDocumento;
     }
 
     /**
-     * Imposta il valore della proprieta' importoTotaleDocumento.
-     *
+     * Imposta il valore della propriet importoTotaleDocumento.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setImportoTotaleDocumento(BigDecimal value) {
         this.importoTotaleDocumento = value;
     }
 
     /**
-     * Recupera il valore della proprieta' arrotondamento.
-     *
+     * Recupera il valore della propriet arrotondamento.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getArrotondamento() {
         return arrotondamento;
     }
 
     /**
-     * Imposta il valore della proprieta' arrotondamento.
-     *
+     * Imposta il valore della propriet arrotondamento.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setArrotondamento(BigDecimal value) {
         this.arrotondamento = value;
@@ -357,25 +357,25 @@ public class DatiGeneraliDocumentoType {
 
     /**
      * Gets the value of the causale property.
-     *
+     * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the causale property.
-     *
+     * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
      *    getCausale().add(newItem);
      * </pre>
-     *
-     *
+     * 
+     * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link String }
-     *
-     *
+     * 
+     * 
      */
     public List<String> getCausale() {
         if (causale == null) {
@@ -385,24 +385,24 @@ public class DatiGeneraliDocumentoType {
     }
 
     /**
-     * Recupera il valore della proprieta' art73.
-     *
+     * Recupera il valore della propriet art73.
+     * 
      * @return
      *     possible object is
      *     {@link Art73Type }
-     *
+     *     
      */
     public Art73Type getArt73() {
         return art73;
     }
 
     /**
-     * Imposta il valore della proprieta' art73.
-     *
+     * Imposta il valore della propriet art73.
+     * 
      * @param value
      *     allowed object is
      *     {@link Art73Type }
-     *
+     *     
      */
     public void setArt73(Art73Type value) {
         this.art73 = value;

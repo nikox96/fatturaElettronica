@@ -1,8 +1,8 @@
 //
-// Questo file e' stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802
-// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a>
-// Qualsiasi modifica a questo file andra' persa durante la ricompilazione dello schema di origine.
-// Generato il: 2020.10.05 alle 08:33:21 PM CEST
+// Questo file  stato generato dall'architettura JavaTM per XML Binding (JAXB) Reference Implementation, v2.2.8-b130911.1802 
+// Vedere <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Qualsiasi modifica a questo file andr persa durante la ricompilazione dello schema di origine. 
+// Generato il: 2021.11.13 alle 03:27:08 PM CET 
 //
 
 
@@ -21,9 +21,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 /**
  * <p>Classe Java per AltriDatiGestionaliType complex type.
- *
+ * 
  * <p>Il seguente frammento di schema specifica il contenuto previsto contenuto in questa classe.
- *
+ * 
  * <pre>
  * &lt;complexType name="AltriDatiGestionaliType">
  *   &lt;complexContent>
@@ -38,8 +38,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- *
- *
+ * 
+ * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "AltriDatiGestionaliType", propOrder = {
@@ -65,96 +65,96 @@ public class AltriDatiGestionaliType {
     protected XMLGregorianCalendar riferimentoData;
 
     /**
-     * Recupera il valore della proprieta' tipoDato.
-     *
+     * Recupera il valore della propriet tipoDato.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getTipoDato() {
         return tipoDato;
     }
 
     /**
-     * Imposta il valore della proprieta' tipoDato.
-     *
+     * Imposta il valore della propriet tipoDato.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setTipoDato(String value) {
         this.tipoDato = value;
     }
 
     /**
-     * Recupera il valore della proprieta' riferimentoTesto.
-     *
+     * Recupera il valore della propriet riferimentoTesto.
+     * 
      * @return
      *     possible object is
      *     {@link String }
-     *
+     *     
      */
     public String getRiferimentoTesto() {
         return riferimentoTesto;
     }
 
     /**
-     * Imposta il valore della proprieta' riferimentoTesto.
-     *
+     * Imposta il valore della propriet riferimentoTesto.
+     * 
      * @param value
      *     allowed object is
      *     {@link String }
-     *
+     *     
      */
     public void setRiferimentoTesto(String value) {
         this.riferimentoTesto = value;
     }
 
     /**
-     * Recupera il valore della proprieta' riferimentoNumero.
-     *
+     * Recupera il valore della propriet riferimentoNumero.
+     * 
      * @return
      *     possible object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public BigDecimal getRiferimentoNumero() {
         return riferimentoNumero;
     }
 
     /**
-     * Imposta il valore della proprieta' riferimentoNumero.
-     *
+     * Imposta il valore della propriet riferimentoNumero.
+     * 
      * @param value
      *     allowed object is
      *     {@link BigDecimal }
-     *
+     *     
      */
     public void setRiferimentoNumero(BigDecimal value) {
         this.riferimentoNumero = value;
     }
 
     /**
-     * Recupera il valore della proprieta' riferimentoData.
-     *
+     * Recupera il valore della propriet riferimentoData.
+     * 
      * @return
      *     possible object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public XMLGregorianCalendar getRiferimentoData() {
         return riferimentoData;
     }
 
     /**
-     * Imposta il valore della proprieta' riferimentoData.
-     *
+     * Imposta il valore della propriet riferimentoData.
+     * 
      * @param value
      *     allowed object is
      *     {@link XMLGregorianCalendar }
-     *
+     *     
      */
     public void setRiferimentoData(XMLGregorianCalendar value) {
         this.riferimentoData = value;
