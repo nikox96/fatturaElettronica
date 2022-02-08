@@ -179,24 +179,32 @@ public class FatturaElettronica {
                     fr = new FileReader(jfc.getSelectedFiles()[fileIndex]);
                     br = new BufferedReader(new InputStreamReader(new FileInputStream(jfc.getSelectedFiles()[fileIndex]), "Cp1252"));
                     String sCurrentLine = br.readLine();
+                    String exceptionMessage = "";
                     while (sCurrentLine != null) {
                         line++;
                         bwe.write(SIMPLE_DATE_FORMAT.format(date) + " >   " + "init-tratt @line: " + line + "\n");
                         try {
                             retCod = getXml(sCurrentLine);
                         } catch (IOException | ParseException | JAXBException | DatatypeConfigurationException e) {
-                            JOptionPane.showMessageDialog(jp, "Errore riga " + line + "\nValore riga: " + sCurrentLine + "\nEccezione sollevata: " + e.toString() + "\n", "Formato dato errato", JOptionPane.WARNING_MESSAGE);
+                            exceptionMessage = e.getLocalizedMessage();
+                            JOptionPane.showMessageDialog(jp, "Errore riga " + line + "\nValore riga: " + sCurrentLine + "\nEccezione sollevata: " + e.toString() + "\n", "Formato dato errato", JOptionPane.ERROR_MESSAGE);
+                            retCod = 4;
                         }
+                        
                         switch (retCod) {
                             case 1:
                                 break;
+                            case 2:
+                                bwe.write(SIMPLE_DATE_FORMAT.format(date) + " >   " + "debug: " + retCod + " - parametri in index[] non presenti\n");
+                                break;
                             case 3:
-                                bwe.write(SIMPLE_DATE_FORMAT.format(date) + " >   " + "errore tipo: " + retCod + " - parametri in index[] non presenti o più di 2 \n");
+                                bwe.write(SIMPLE_DATE_FORMAT.format(date) + " >   " + "debug: " + retCod + " - più di 2 parametri in index[] presenti\n");
                                 break;
                             default:
-                                bwe.write(SIMPLE_DATE_FORMAT.format(date) + " >   " + "errore tipo: " + retCod + "\n");
+                                bwe.write(SIMPLE_DATE_FORMAT.format(date) + " >   " + "errore tipo " + retCod + ": " + exceptionMessage + "\n");
                                 break;
                         }
+                        
                         sCurrentLine = br.readLine();
                     }
                     buildFattBody();
@@ -304,7 +312,9 @@ public class FatturaElettronica {
         /*if (index.length > 1) {
             index[1] = index[1].replaceAll("[^a-zA-Z0-9- ]+", "");
         }*/
-        if (index.length != 2) {
+        if (index.length < 2) {
+            return 2;
+        } else if (index.length > 2) {
             return 3;
         } else {
             lvlarr = index[0].split("\\.");
@@ -321,6 +331,7 @@ public class FatturaElettronica {
             } else if (Integer.parseInt(lvlarr[2]) > 9 && Integer.parseInt(lvlarr[3]) <= 9) {
                 lvlTmp = index[0].substring(0, 6) + '0' + index[0].substring(6, index[0].length());
             }
+            
             lvlCur = cntlLvl(lvlTmp.replace(".", "").replace(",", ""));
             if (lvlPrev >= lvlCur) {
                 if (lvlCur > 10000000 && lvlCur < 20000000) {
